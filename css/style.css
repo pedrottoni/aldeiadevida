@@ -1,0 +1,773 @@
+/* I - Estilos gerais do site*/
+/* I - */
+/* F - */
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|Roboto:300,400,500|Overlock|Cinzel+Decorative&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: cinzel decorative;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.15rem;
+    color: hsla(230, 10%, 40%, 1);
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 500;
+}
+
+body {
+    font-family: roboto;
+    background: #f9f9f9;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
+    text-decoration: none;
+    color: hsla(230, 10%, 40%, 1);
+}
+
+address a:hover span {
+    color: hsla(200, 100%, 40%, 1) !important;
+}
+
+@media (max-width:575px) {
+    address {
+        text-align: center;
+    }
+}
+
+.molduraModal {
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+/* F - Estilos gerais do site*/
+/* I - Menu*/
+#menuPrincipal {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    transition: all .2s;
+    z-index: 299;
+    display: grid;
+    place-content: center;
+}
+
+.change {
+    height: 60px !important;
+    background: linear-gradient(67deg, hsla(0, 100%, 70%, 1) 0%, rgb(244, 92, 67) 100%);
+    z-index: 299;
+}
+
+.fundoModal {
+    min-height: 100vh;
+    height: auto;
+    position: fixed;
+}
+
+#menuPrincipal nav {
+    display: flex;
+    z-index: 299;
+    max-width: 1040px;
+    place-content: space-between;
+    width: 100vw;
+}
+
+#menuPrincipal nav .logo {
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    font-family: Overlock;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    margin-left: 0px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: unset;
+    display: flex;
+    align-items: center;
+}
+
+.logotipo {
+    margin-right: .7rem;
+    width: 40px;
+}
+
+nav .links {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#menuPrincipal nav .links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#menuPrincipal nav .links ul li {
+    list-style: none;
+    position: relative;
+}
+
+#menuPrincipal nav .links ul li a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#menuPrincipal nav .links ul li a:hover,
+#menuPrincipal nav .links ul li a.active {
+    background: hsla(0, 100%, 70%, 1);
+    text-decoration: none;
+    transition: all .2s;
+    border-radius: 0.2rem;
+}
+
+#menuPrincipal nav .linksSubMenu a:hover,
+#menuPrincipal nav .linksSubMenu a.active {
+    color: hsla(0, 100%, 70%, 1) !important;
+    background: transparent !important;
+}
+
+#menuPrincipal nav .links ul li ul {
+    position: fixed;
+    transition: all .1s;
+    left: 0;
+    background: radial-gradient(circle, #f9f9f9 70%, transparent 400%);
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#menuPrincipal nav .links ul li.active ul {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    height: auto;
+    box-shadow: 0 2px 2px 0px rgba(60, 64, 67, .08), 0 2px 10px -1px rgba(60, 64, 67, .16);
+}
+
+#menuPrincipal nav .links ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+#menuPrincipal nav .menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+#menuPrincipal nav .links ul li .linksSubMenu a {
+    display: flex;
+    place-items: center;
+    width: 100%;
+    color: hsla(230, 10%, 40%, 1);
+    overflow: hidden;
+    height: 2.5rem;
+    line-height: 3;
+}
+
+#nucleos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    max-width: 1040px;
+    width: 100vw;
+    align-self: center;
+    justify-items: center;
+}
+
+#nucleos div {
+    width: 15rem;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#nucleos img {
+    height: 3rem;
+    margin: 0 auto 1rem;
+    width: 50%;
+}
+
+#nucleos h2 {
+    font-family: overlock;
+    font-size: 1.6rem;
+    padding-bottom: 0.4rem;
+    background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(0, 100%, 70%, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: .1rem solid hsla(230, 10%, 40%, 0.36);
+    margin-left: 20px;
+    margin-bottom: 0.6rem;
+    width: 76%;
+}
+
+#nucleos a:hover {
+    color: #fff !important;
+}
+
+#aldeeiro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    max-width: 1040px;
+    width: 100vw;
+    align-self: center;
+}
+
+#aldeeiro .aldeeiroGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+#aldeeiro img {
+    height: 4rem;
+}
+
+#aldeeiro a {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    height: 100% !important;
+}
+
+#aldeeiro a:hover {
+    background: transparent !important;
+    color: hsla(0, 100%, 70%, 1) !important;
+}
+
+@media (max-width:767px) {
+    #menuPrincipal {
+        padding: 0 2rem 0 1rem;
+    }
+
+    #menuPrincipal nav .menu-toggle {
+        display: block;
+    }
+
+    #menuPrincipal nav .links {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        background: radial-gradient(circle, rgb(244, 92, 67) 70%, hsl(0, 0%, 0%) 400%);
+        top: -200vh;
+        left: 0;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0s;
+        z-index: 199;
+    }
+
+    #menuPrincipal nav .links.active {
+        top: 3.7rem;
+        z-index: 199;
+        transition: all .2s;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+
+    #menuPrincipal nav .links ul {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menuPrincipal nav .links ul li.active ul {
+        position: relative;
+        background: radial-gradient(hsla(55, 100%, 97%, 1)-30%, hsla(245, 100%, 95%, 1)150%);
+        transition: all .2s;
+    }
+
+    #menuPrincipal nav .links ul li ul li {
+        width: 100%;
+    }
+
+    #menuPrincipal nav .linksSubMenu {
+        font-size: 1rem;
+    }
+
+    #menuPrincipal nav .links ul li .linksSubMenu a {
+        width: calc(100% - 1rem);
+    }
+
+    #menuPrincipal nav .links ul li {
+        width: 100vw;
+    }
+
+    #menuPrincipal nav .links ul li a {
+        padding: 0;
+    }
+}
+
+/* F - Menu*/
+/* I - Main*/
+main {
+    overflow-x: hidden;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    max-width: 100vw;
+    -webkit-perspective: 50px;
+    perspective: 50px;
+    -webkit-perspective-origin: center;
+    perspective-origin: center;
+    top: 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: [slide-start] 1fr [slide-end];
+    grid-template-rows: auto;
+    grid-template-areas: 'sections';
+    grid-gap: 0;
+}
+
+*::-webkit-scrollbar {
+    width: .6em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: hsla(230, 10%, 40%, 1);
+    outline: 1px solid slategrey;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: hsla(200, 100%, 40%, 1);
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+
+main section,
+main section a {
+    transform-style: preserve-3d;
+    text-decoration: none;
+}
+
+/* F - Main*/
+/* I - Titles */
+.capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* I - Page Titles */
+.pageTitle1 {
+    font-size: 3.5rem;
+    z-index: 0;
+    color: hsla(230, 10%, 40%, 1);
+    min-width: 28.4rem;
+    max-width: 37rem;
+    padding-bottom: .5rem;
+    font-weight: normal;
+}
+
+.pageTitle2 {
+    text-align: center;
+    font-size: 7rem;
+    line-height: 5rem;
+    background: linear-gradient(22deg, hsla(40, 100%, 70%, 1), hsla(0, 100%, 70%, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 3rem 0 0 0;
+    position: relative;
+    top: -2.8rem;
+    width: 100vw;
+    height: 6.2rem;
+}
+
+@media (max-width:766px) {
+    .pageTitle1 {
+        font-size: 2rem;
+        z-index: 0;
+        color: hsla(230, 10%, 40%, 1);
+        min-width: 19rem;
+        max-width: 35rem;
+        padding-bottom: .5rem;
+        font-weight: normal;
+    }
+
+    .pageTitle2 {
+        font-size: 4.2rem;
+        line-height: 65px;
+        color: hsla(0, 100%, 70%, 1);
+        text-align: center;
+        top: -3.7rem;
+    }
+}
+
+/* F - Page Titles */
+/* I - Section Titles Center */
+.sectionTitleCenter1 {
+    font-size: calc(1vmax + 1.3rem);
+    z-index: 0;
+    color: hsla(230, 10%, 40%, 1);
+    padding-bottom: .5rem;
+    font-weight: normal;
+}
+
+.sectionTitleCenter2 {
+    text-align: center;
+    font-size: calc(3vmax + 1.5rem);
+    background: linear-gradient(22deg, hsla(40, 100%, 70%, 1), hsla(0, 100%, 70%, 1) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: -1.1rem;
+    height: calc(4vmax + 3rem);
+}
+
+.capa::after {
+    content: "";
+    height: 42px;
+    background: transparent;
+    position: relative;
+    border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
+    width: 90vw;
+    z-index: 120;
+    border-top: 5px solid hsla(40, 100%, 70%, 1);
+    transform: rotate(1deg) translateY(-4.5rem);
+    top: -.5rem;
+    max-width: 30rem;
+}
+
+/* F - Secton Titles Center */
+/* I - Section Title Text */
+.sectionTitleText {
+    padding-top: 0rem;
+    color: hsla(230, 10%, 40%, 1);
+    font-weight: 300;
+    text-align: center;
+    font-family: roboto;
+    max-width: 40rem;
+    width: calc(100vw - 3rem);
+    height: 60px;
+    top: 1rem;
+    position: relative;
+}
+
+/* F - Section Title Text */
+/* F - Titles */
+/* I - Slide*/
+#slide {
+    grid-area: slide;
+    display: grid;
+    grid-template-columns: [osSlides-start] 1fr [osSlides-end];
+    grid-template-rows: [osSlides-start] 75vh [osSlides-end];
+    grid-template-areas: 'listaSlides';
+    width: 100vw;
+    z-index: -10;
+}
+
+#slide .slides:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(30, 5, 0, 0.8), transparent, transparent, transparent);
+    pointer-events: none;
+}
+
+#slide input {
+    position: absolute;
+    display: none;
+}
+
+#slide .slides {
+    width: 110vw;
+    padding: 0 1vmax 6vmax;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    grid-area: osSlides;
+    transition: all ease-in-out 1.8s;
+    right: 5vw;
+    position: relative;
+    min-height: 75vh;
+}
+
+#slide .slides h1,
+#slide .slides p {
+    display: none;
+}
+
+#slide .slides .tituloSlides {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+#slide .slides .textoSlides {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+#slide #slide1 {
+    background-image: url('../img/slide1.jpg');
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transform: translateZ(-.4rem) scale(1.2);
+}
+
+#radioSlide1:checked~#slide1 {
+    opacity: 1;
+}
+
+#slide #slide2 {
+    background-image: url('../img/slide2.jpg');
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transform: translateZ(-.4rem) scale(1.2);
+}
+
+#radioSlide2:checked~#slide2 {
+    opacity: 1;
+}
+
+#slide #slide3 {
+    background-image: url('../img/slide3.jpg');
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transform: translateZ(-.4rem) scale(1.2);
+}
+
+#radioSlide3:checked~#slide3 {
+    opacity: 1;
+}
+
+#slide #listaSlides {
+    grid-area: listaSlides;
+    display: none;
+    z-index: 0;
+    bottom: 0;
+    position: absolute;
+    height: 50vh;
+    left: calc(50vw - 5rem);
+    width: 11rem;
+}
+
+#slide #listaSlides label {
+    cursor: pointer;
+    background: rgba(60, 64, 67, .8);
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    align-self: center;
+}
+
+#slide #listaSlides label:hover {
+    background: hsla(230, 10%, 40%, 1);
+}
+
+.active,
+label:hover {
+    color: red;
+}
+
+/* F - Slide*/
+/* I - Sections*/
+.sections {
+    grid-area: sections;
+    z-index: 80;
+    height: max-content;
+    position: relative;
+    padding-top: 70px;
+    top: -70px;
+    transform-style: preserve-3d;
+}
+
+#sec1 {
+    width: 160vw;
+    right: 30vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100rem 100rem 100rem 100rem / 6rem 6rem 20rem 20rem;
+    background: linear-gradient(to right, hsla(40, 100%, 70%, 1) 5%, rgb(244, 92, 67) 50%, hsla(40, 100%, 70%, 1) 95%);
+    z-index: 70;
+}
+
+#sec1 .contSec1 {
+    background: radial-gradient(hsla(55, 100%, 97%, 1)-30%, hsla(245, 100%, 95%, 1)150%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 13rem;
+    padding-top: 5rem;
+    width: 130vw;
+    border-radius: 100rem 100rem 100rem 100rem / 10rem 10rem 6rem 6rem;
+    margin-top: .2rem;
+    box-shadow: inset 0px 0px 20px 0px rgba(60, 64, 67, .16);
+}
+
+@media (max-width:425px) {
+    #sec1 .contSec1 {
+        padding-top: 3.5rem;
+        padding-bottom: 8rem;
+    }
+}
+
+#sec1 p {
+    width: 70%;
+    max-width: 40rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: hsla(230, 10%, 40%, 1);
+    z-index: 0;
+}
+
+#sec2 {
+    position: relative;
+    z-index: 80;
+}
+
+#sec3 {
+    width: 160vw;
+    right: 30vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100rem 100rem 100rem 100rem / 6rem 6rem 20rem 20rem;
+    background: linear-gradient(to right, hsla(40, 100%, 70%, 1) 5%, rgb(244, 92, 67) 50%, hsla(40, 100%, 70%, 1) 95%);
+    z-index: 70;
+}
+
+#sec3 .contSec3 {
+    background: radial-gradient(hsla(55, 100%, 97%, 1)-30%, hsla(245, 100%, 95%, 1)150%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+    width: 130vw;
+    border-radius: 100rem 100rem 100rem 100rem / 10rem 10rem 6rem 6rem;
+    margin-top: .2rem;
+    box-shadow: inset 0px 0px 20px 0px rgba(60, 64, 67, .16);
+}
+
+#sec4 {
+    position: relative;
+    justify-content: center;
+    z-index: 80;
+}
+
+#sec4 .sec4Cont {
+    background: hsla(0, 0%, 98%, 1);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    z-index: 0;
+}
+
+.sec4Img {
+    grid-area: sec2Img;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+.sec4Txt {
+    grid-area: sec2Txt;
+}
+
+.sec4Txt h2 {
+    background: linear-gradient(to right, hsla(145, 50%, 60%, 1), hsla(200, 100%, 40%, 1) 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    border-bottom: .1rem solid hsla(145, 50%, 60%, 1);
+    padding-bottom: .8rem;
+}
+
+footer {
+    background: linear-gradient(140deg, hsla(0, 100%, 70%, 1) 0%, hsla(230, 10%, 40%, 1) 100%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

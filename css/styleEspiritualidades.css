@@ -1,0 +1,268 @@
+#sec1 .contSec1 {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    margin-bottom: .2rem;
+}
+
+#sec1 .sectionTitleText {
+    top: -1rem;
+}
+
+#sec1 .contSec1 .pageTitle1 {
+    text-align: center;
+}
+
+#sec1 .contSec1 .pageTitle2 {
+    background: linear-gradient(22deg, hsla(145, 50%, 60%, 1), hsla(70, 100%, 70%, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    font-size: 5rem;
+    position: relative;
+    top: -1.1rem;
+}
+
+#sec1 .contSec1 .capa::after {
+    content: "";
+    height: 6rem;
+    background: transparent;
+    position: relative;
+    border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
+    width: 90vw;
+    z-index: 120;
+    border-top: 5px solid hsla(40, 100%, 70%, 1);
+    transform: rotate(1deg) translateY(-4.5rem);
+    top: 3rem;
+    max-width: 30rem;
+}
+
+#sec1 .contSec1 .textoCapa {
+    position: relative;
+    top: -5rem;
+}
+
+#sec1 .contSec1 .cardsEspiritualidades {
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 11rem));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    width: 90vw;
+    max-width: 1040px;
+    justify-content: center;
+}
+
+#sec1 .contSec1 .cardsEspiritualidades .card {
+    width: 12rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 1px rgba(60, 64, 67, .16);
+}
+
+#sec1 .contSec1 .cardsEspiritualidades .card .saibaMais {
+    position: relative;
+    top: -2.7rem;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+#sec1 .contSec1 .cardsEspiritualidades .card img {
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0rem -0.7rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 1px rgba(60, 64, 67, .16);
+    transition: all .5s ease;
+}
+
+#sec1 .contSec1 .cardsEspiritualidades .card:hover img {
+    transform: translateY(-3.4rem);
+}
+
+#sec1 .contSec1 .cardsEspiritualidades .card::after {
+    content: "";
+    width: 12rem;
+    height: 16rem;
+    position: absolute;
+    background: linear-gradient(22deg, hsla(145, 50%, 60%, 1), hsla(70, 100%, 70%, 1));
+    top: 0;
+    z-index: 0;
+}
+
+@media (max-width: 766px) {
+    #sec1 .contSec1 .pageTitle2 {
+        font-size: calc(3vmax + 1.6rem);
+        height: calc(4vmax + 3rem);
+    }
+
+    #sec1 .contSec1 .pageTitle1 {
+        font-size: calc(2vmax + 1rem);
+    }
+
+    #sec1 .contSec1 .cardsEspiritualidades {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
+    }
+
+    #sec1 .contSec1 .cardsEspiritualidades .card {
+        width: 7rem;
+        height: 9rem;
+    }
+
+    #sec1 .contSec1 .cardsEspiritualidades .card::after {
+        width: 7rem;
+        height: 9rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #sec1 .sectionTitleText {
+        font-size: 1.2rem;
+    }
+
+    #sec1 .contSec1 .pageTitle1 {
+        font-size: calc(1vmax + 1rem);
+    }
+
+    #sec1 .contSec1 .pageTitle2 {
+        font-size: calc(3vmax + 1rem);
+        letter-spacing: -0.1rem;
+    }
+}
+
+/* I - Modal */
+.closeModal {
+    position: fixed;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: monospace;
+    color: #000;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+    padding: .6rem;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px 0rem 0 -10px;
+    z-index: 300;
+}
+
+.closeModal:hover {
+    cursor: pointer;
+    color: hsla(0, 100%, 70%, 1);
+    transition: all .5s;
+}
+
+.topoModal .intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.topoModal .intro .capa::after {
+    top: 3rem;
+}
+
+.topoModal .intro .sectionTitleText {
+    height: auto;
+    top: -1.5rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.topoModal .intro .sectionTitleCenter1 {
+    font-size: 1.9rem;
+}
+
+.topoModal .intro .sectionTitleCenter2 {
+    background: linear-gradient(22deg, hsla(70, 100%, 70%, 1), hsla(145, 50%, 60%, 1) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+}
+
+.topoModal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fundoModal {
+    width: 100%;
+    background: radial-gradient(circle, #f9f9f9 70%, transparent 700%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.molduraModal {
+    width: 100vw;
+    min-height: 90vh;
+    border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 100vh;
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1) .1s;
+    transform-style: preserve-3d;
+    opacity: 0;
+}
+
+.modal section:nth-child(3) {
+    display: flex;
+    opacity: 0;
+    z-index: 0;
+    transition: all .5s ease;
+}
+
+.modal input:nth-child(1):checked~section:nth-child(3) {
+    opacity: 1;
+    z-index: 300;
+    transition: all .5s ease;
+}
+
+.modal input:nth-child(1):checked~.fundoModal div:nth-child(1) {
+    opacity: 1;
+}
+
+
+@media (max-width:767px) {
+    .molduraModal {
+        top: 0 !important;
+        position: relative;
+        overflow-x: hidden;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .topoModal .intro .sectionTitleCenter1 {
+        text-align: center;
+        font-size: calc(2vmax + 1rem);
+    }
+
+    .topoModal .intro .sectionTitleCenter2 {
+        height: 100%;
+        font-size: calc(3vmax + 1.6rem);
+        line-height: 2.8rem;
+        margin: 1rem 0;
+    }
+
+    .topoModal .intro .sectionTitleText {
+        text-align: left;
+    }
+}
