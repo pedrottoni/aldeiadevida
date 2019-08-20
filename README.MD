@@ -1,1 +1,1 @@
-Site oficial das Aldeias de Vida
+Primeira versão do site oficial das Aldeias de Vida
