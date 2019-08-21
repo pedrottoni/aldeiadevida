@@ -511,6 +511,10 @@ main {
     width: 95%;
     height: 95%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+
 }
 
 #sec3 .flip-card-front {
