@@ -392,20 +392,6 @@ main {
     }
 }
 
-@media (max-width:767px) {
-    .sec2Img {
-        grid-area: sec2Img;
-        display: flex;
-        justify-content: center;
-        padding-right: 0;
-    }
-
-    .sec2Txt {
-        grid-area: sec2Txt;
-        padding: 1rem;
-    }
-}
-
 /*Sec2 Interatividade*/
 #sec2 input {
     display: none;
@@ -484,7 +470,14 @@ main {
     background-color: transparent;
     width: 160px;
     height: 160px;
-    perspective: 1000px;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     transition: all .5s;
 }
 
@@ -498,6 +491,9 @@ main {
     box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 1px rgba(60, 64, 67, .16);
     transition: transform 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     background: linear-gradient(22deg, hsla(145, 50%, 60%, 1), hsla(70, 100%, 70%, 1));
     display: flex;
     flex-direction: column;
