@@ -103,7 +103,7 @@ address a:hover span {
     z-index: 299;
     max-width: 1040px;
     place-content: space-between;
-    width: 100vw;
+    width: calc(100vw - 2rem);
 }
 
 #menuPrincipal nav .logo {
