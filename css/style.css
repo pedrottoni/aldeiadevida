@@ -123,7 +123,7 @@ footer .logotipo {
 }
 
 .logo,
-.logo a{
+.logo a {
     text-decoration: none;
     color: unset;
     display: flex;
@@ -773,6 +773,7 @@ label:hover {
 
 footer {
     display: grid;
+    max-width: 100vw;
     padding-top: 2rem;
     padding-bottom: 2rem;
     place-items: center;
@@ -782,12 +783,46 @@ footer {
 footer section {
     width: calc(100vw - 1rem);
     max-width: 1040px;
+    display: flex;
+    place-content: space-between;
 }
 
 footer .logo {
     color: hsla(0, 100%, 70%, 1);
+    font-size: 1.5rem;
 }
 
 footer .logotipo svg {
     padding-right: .5rem;
 }
+
+.socialIcon {
+    width: 30px;
+    height: 30px;
+    padding: 0 .5rem;
+    object-fit: cover;
+    filter: saturate(0.7) opacity(0.7);
+    transition: .5s ease;
+}
+
+.socialIcon:hover {
+    filter: saturate(1) opacity(1);
+}
+
+.facebookIcon {
+    object-position: 0;
+}
+
+.youtubeIcon {
+    object-position: -31px;
+}
+
+.instagramIcon {
+    object-position: -62px;
+}
+
+.twitterIcon {
+    object-position: -92px;
+}
+
+
