@@ -64,6 +64,7 @@ address a:hover span {
 
 .molduraModal {
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .hidden {
@@ -88,7 +89,7 @@ address a:hover span {
 
 .change {
     height: 60px !important;
-    background: linear-gradient(67deg, hsla(0, 100%, 70%, 1) 0%, rgb(244, 92, 67) 100%);
+    background: linear-gradient(67deg, hsla(0, 100%, 70%, 1) 0%, rgb(244, 92, 67) 200%);
     z-index: 299;
 }
 
@@ -103,11 +104,14 @@ address a:hover span {
     z-index: 299;
     max-width: 1040px;
     place-content: space-between;
+    justify-content: space-between;
     width: calc(100vw - 2rem);
 }
 
-#menuPrincipal nav .logo {
+#menuPrincipal nav .logo,
+footer .logotipo {
     color: #fff;
+    width: auto;
     height: 60px;
     line-height: 60px;
     font-family: Overlock;
@@ -118,7 +122,8 @@ address a:hover span {
     margin-left: 0px;
 }
 
-.logo a {
+.logo,
+.logo a{
     text-decoration: none;
     color: unset;
     display: flex;
@@ -324,7 +329,6 @@ nav .links {
         top: 3.7rem;
         z-index: 199;
         transition: all .2s;
-        overflow-y: auto;
         overflow-x: hidden;
         width: 100vw;
         font-size: 1.5rem;
@@ -367,6 +371,7 @@ nav .links {
 /* I - Main*/
 main {
     overflow-x: hidden;
+    overflow-y: auto;
     min-height: 100vh !important;
     max-height: 100vh !important;
     max-width: 100vw;
@@ -767,7 +772,22 @@ label:hover {
 }
 
 footer {
-    background: linear-gradient(140deg, hsla(0, 100%, 70%, 1) 0%, hsla(230, 10%, 40%, 1) 100%);
+    display: grid;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    place-items: center;
+    justify-content: center;
+}
+
+footer section {
+    width: calc(100vw - 1rem);
+    max-width: 1040px;
+}
+
+footer .logo {
+    color: hsla(0, 100%, 70%, 1);
+}
+
+footer .logotipo svg {
+    padding-right: .5rem;
 }
