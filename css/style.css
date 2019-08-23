@@ -113,7 +113,6 @@ footer .logotipo {
     color: #fff;
     width: auto;
     height: 60px;
-    line-height: 60px;
     font-family: Overlock;
     font-size: 24px;
     font-weight: bold;
@@ -773,8 +772,9 @@ label:hover {
 
 footer {
     display: grid;
+    position: relative;
+    bottom: 50px;
     max-width: 100vw;
-    padding-top: 2rem;
     padding-bottom: 2rem;
     place-items: center;
     justify-content: center;
@@ -784,16 +784,22 @@ footer section {
     width: calc(100vw - 1rem);
     max-width: 1040px;
     display: flex;
-    place-content: space-between;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer .logo {
-    color: hsla(0, 100%, 70%, 1);
+    background: linear-gradient(22deg, hsla(0, 100%, 70%, 1), hsla(40, 100%, 70%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 footer .logotipo svg {
     padding-right: .5rem;
+    margin-right: 0; 
 }
 
 .socialIcon {
@@ -825,4 +831,13 @@ footer .logotipo svg {
     object-position: -92px;
 }
 
+@media (max-width:425px) {
+    footer section {
+        flex-direction: column;
+    }
 
+    footer .logo {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(209, 209, 209)
+    }
+}

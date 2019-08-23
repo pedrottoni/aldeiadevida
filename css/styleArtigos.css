@@ -1,0 +1,87 @@
+#sec1 {
+    border-radius: 100rem 100rem 100rem 100rem / 20rem 20rem 6rem 6rem;
+    background: linear-gradient(to right, hsla(40, 100%, 70%, 1) 0%, rgb(244, 92, 67) 50%, hsla(40, 100%, 70%, 1) 100%);
+    width: 100vw;
+    right: 0;
+    border-radius: 0;
+    clip-path: ellipse(calc(50% + 40rem) 50% at 50% 50%);
+}
+
+#sec1 .contSec1 {
+    padding-bottom: 3rem;
+    width: 100vw;
+    border-radius: 0;
+    clip-path: ellipse(calc(50% + 30rem) 54% at 50% 45%);
+}
+
+@media (max-width: 425px) {
+    #sec1 .sectionTitleText {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 766px) {
+
+    #sec1 .contSec1 {
+        padding-top: 6rem;
+    }
+
+    #sec1 .capa::after {
+        top: -3rem;
+    }
+
+    #sec1 .sectionTitleText {
+        top: -1rem;
+    }
+}
+
+#capaSec2 {
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin: -5rem 0;
+}
+
+#capaSec2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100vw;
+    transform: translateZ(-10px) scale(1.5);
+}
+
+#artigos {
+    width: 100vw;
+    background: linear-gradient(to right, hsla(40, 100%, 70%, 1) 5%, rgb(244, 92, 67) 50%, hsla(40, 100%, 70%, 1) 95%);
+    clip-path: ellipse(calc(50% + 65rem) calc(50% + 2.3rem) at 50% 55%);
+}
+
+.fundoGradiente {
+    width: 100vw;
+    padding: 8rem 0;
+    background: radial-gradient(hsla(55, 100%, 97%, 1)-30%, hsla(245, 100%, 95%, 1)150%);
+    clip-path: ellipse(calc(50% + 50rem) calc(50% + 2rem) at 50% 55%);
+    display: grid;
+    justify-content: center;
+}
+
+#listaDeArtigos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-auto-columns: 50px;
+    grid-auto-rows: 170px;
+    grid-gap: 1rem;
+    width: 100vw;
+    max-width: 1040px;
+}
+
+.artigo {
+    background: hsla(0, 100%, 70%, 1);
+    width: 100%;
+    height: 100%;
+}
+
+.artigo1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}

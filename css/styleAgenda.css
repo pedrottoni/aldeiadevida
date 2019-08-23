@@ -126,11 +126,11 @@
     max-width: 520px;
     border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
     background: #f9f9f9;
-    top: -100%;
+    top: -100vh;
     position: relative;
     overflow-y: auto;
     box-shadow: 0 1px 70px 0 rgb(60, 64, 67), 0 1px 3px 1px rgba(60, 64, 67, 0.5);
-    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1) .3s;
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width:767px) {
@@ -487,7 +487,6 @@
 .modalEvento .topoModal {
     background: hsla(282, 50%, 55%, 1);
     height: 15rem;
-    background-image: url(../img/s1.jpg);
     background-blend-mode: soft-light;
     background-size: cover;
     display: flex;

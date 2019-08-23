@@ -350,6 +350,7 @@
 
 .fundoModal {
     width: 100%;
+    height: 100%;
     background: hsla(230, 10%, 40%, 0.90);
     position: absolute;
     top: 0;
