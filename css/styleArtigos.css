@@ -85,3 +85,33 @@
     grid-column: span 2;
     grid-row: span 2;
 }
+
+.inputs {
+    visibility: hidden;
+    position: absolute;
+}
+
+#artigo1:checked ~ .modalFundo,
+#artigo2:checked ~ .modalFundo,
+#artigo3:checked ~ .modalFundo,
+#artigo4:checked ~ .modalFundo {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    z-index: 300;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+.modalMolde {
+    background: white;
+    width: 50vw;
+    height: 50vh;
+}
+
+#artigo1:checked ~ .modalFundo .modalMolde dialog:nth-child(1),
+#artigo2:checked ~ .modalFundo .modalMolde dialog:nth-child(2) {
+    display: grid;
+}
