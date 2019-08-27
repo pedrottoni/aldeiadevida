@@ -73,6 +73,9 @@ address a:hover span {
 
 dialog {
     position: relative;
+    border:none;
+    overflow: auto;
+    background: transparent;
 }
 
 /* F - Estilos gerais do site*/
