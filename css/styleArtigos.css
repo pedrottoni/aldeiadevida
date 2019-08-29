@@ -1,274 +1,332 @@
 #sec1 {
-  border-radius: 100rem 100rem 100rem 100rem / 20rem 20rem 6rem 6rem;
-  background: linear-gradient(to right,
-      hsla(40, 100%, 70%, 1) 0%,
-      rgb(244, 92, 67) 50%,
-      hsla(40, 100%, 70%, 1) 100%);
-  width: 100vw;
-  right: 0;
-  border-radius: 0;
-  clip-path: ellipse(calc(50% + 40rem) 50% at 50% 50%);
+    border-radius: 100rem 100rem 100rem 100rem / 20rem 20rem 6rem 6rem;
+    background: linear-gradient(to right, hsla(40, 100%, 70%, 1) 0%, rgb(244, 92, 67) 50%, hsla(40, 100%, 70%, 1) 100%);
+    width: 100vw;
+    right: 0;
+    border-radius: 0;
+    clip-path: ellipse(calc(50% + 40rem) 50% at 50% 50%);
 }
 
 #sec1 .contSec1 {
-  padding-bottom: 3rem;
-  width: 100vw;
-  border-radius: 0;
-  clip-path: ellipse(calc(50% + 30rem) 54% at 50% 45%);
+    padding-bottom: 3rem;
+    width: 100vw;
+    border-radius: 0;
+    clip-path: ellipse(calc(50% + 30rem) 54% at 50% 45%);
 }
 
-@media (max-width: 425px) {
-  #sec1 .sectionTitleText {
-    font-size: 1.2rem;
-  }
+@media(max-width: 425px) {
+    #sec1 .sectionTitleText {
+        font-size: 1.2rem;
+    }
 }
 
-@media (max-width: 766px) {
-  #sec1 .contSec1 {
-    padding-top: 6rem;
-  }
+@media(max-width: 766px) {
+    #sec1 .contSec1 {
+        padding-top: 6rem;
+    }
 
-  #sec1 .capa::after {
-    top: -3rem;
-  }
+    #sec1 .capa::after {
+        top: -3rem;
+    }
 
-  #sec1 .sectionTitleText {
-    top: -1rem;
-  }
+    #sec1 .sectionTitleText {
+        top: -1rem;
+    }
 }
 
 #capaSec2 {
-  height: 60vh;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  margin: -5rem 0;
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin: -5rem 0;
 }
 
 #capaSec2 img {
-  object-fit: cover;
-  height: 100%;
-  width: 100vw;
-  transform: translateZ(-10px) scale(1.5);
+    object-fit: cover;
+    height: 100%;
+    width: 100vw;
+    transform: translateZ(-10px) scale(1.5);
 }
 
 #artigos {
-  width: 100vw;
-  background: linear-gradient(to right,
-      hsla(40, 100%, 70%, 1) 5%,
-      rgb(244, 92, 67) 50%,
-      hsla(40, 100%, 70%, 1) 95%);
-  clip-path: ellipse(calc(50% + 70rem) calc(50% + 2.3rem) at 50% 57%);
+    width: 100vw;
+    background: linear-gradient(to right, hsla(40, 100%, 70%, 1) 5%, rgb(244, 92, 67) 50%, hsla(40, 100%, 70%, 1) 95%);
+    clip-path: ellipse(calc(50% + 70rem) calc(50% + 2.3rem) at 50% 57%);
 }
 
 .fundoGradiente {
-  width: 100vw;
-  padding: 8rem 0;
-  background: radial-gradient(hsla(55, 100%, 97%, 1)-30%,
-      hsla(245, 100%, 95%, 1) 150%);
-  clip-path: ellipse(calc(50% + 50rem) calc(50% + 2rem) at 50% 57%);
-  display: grid;
-  justify-content: center;
+    width: 100vw;
+    padding: 8rem 0;
+    background: radial-gradient(hsla(55, 100%, 97%, 1)-30%, hsla(245, 100%, 95%, 1) 150%);
+    clip-path: ellipse(calc(50% + 50rem) calc(50% + 2rem) at 50% 57%);
+    display: grid;
+    justify-content: center;
 }
 
 #listaDeArtigos {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-auto-columns: 50px;
-  grid-auto-rows: 170px;
-  grid-gap: 1rem;
-  width: 100vw;
-  max-width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-auto-columns: 50px;
+    grid-auto-rows: 170px;
+    grid-gap: 1rem;
+    width: 100vw;
+    max-width: 1040px;
 }
 
 .artigo {
-  background: hsla(0, 100%, 70%, 1);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 .artigo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.9);
-  transition: .5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
 }
 
 .artigo:hover img {
-  filter: brightness(1);
+    filter: brightness(1.1);
 }
 
 .artigo::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-  z-index: 90;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 70%);
+    z-index: 90;
 }
 
 .artigo p {
-  position: absolute;
-  bottom: 0;
-  padding: .2rem 0;
-  margin: 1rem;
-  color: #fff;
-  border-bottom: 0px solid transparent;
-  transition: .5s;
-  z-index: 100;
+    position: absolute;
+    bottom: 0;
+    padding: 0.2rem 0;
+    margin: 1rem;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+    transition: 0.5s;
+    z-index: 100;
+    text-shadow: 0px 0.4px 3px rgba(0, 0, 0, 0.8);
 }
 
 .artigo .grande {
-  font-size: 1.5rem;
-  margin: 2rem;
+    font-size: 1.5rem;
+    margin: 2rem;
 }
 
 .artigo:hover p {
-  transform: translateY(-.5rem);
-  border-bottom: 1px solid #eee;
+    transform: translateY(-0.5rem);
+    border-bottom: 1px solid #eee;
 }
 
 
 .artigo1 {
-  grid-column: span 2;
-  grid-row: span 2;
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .inputs {
-  visibility: hidden;
-  position: absolute;
+    visibility: hidden;
+    position: absolute;
+}
+
+@media(max-width:768px) {
+    #listaDeArtigos {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+}
+
+@media(max-width:650px) {
+    #listaDeArtigos {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
 }
 
 #artigo1:checked~.modalFundo,
 #artigo2:checked~.modalFundo,
 #artigo3:checked~.modalFundo,
 #artigo4:checked~.modalFundo {
-  position: absolute;
-  width: 100vw;
-  background: #fff;
-  z-index: 300;
-  display: grid;
-  place-items: center;
-  box-sizing: border-box;
-  transform-style: preserve-3d;
-  overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+    background: #fff;
+    z-index: 300;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
 }
 
 .modalMolde {
-  height: 100vh;
-  box-sizing: border-box;
-  transform-style: preserve-3d;
+    height: 100vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
 }
 
 #artigo1:checked~.modalFundo .modalMolde dialog:nth-child(1),
 #artigo2:checked~.modalFundo .modalMolde dialog:nth-child(2),
 #artigo3:checked~.modalFundo .modalMolde dialog:nth-child(3),
 #artigo4:checked~.modalFundo .modalMolde dialog:nth-child(4) {
-  display: grid;
-  grid-template-columns: [fundo-start] auto [fundo-end];
-  grid-template-rows: [fundo-start] 45vh 1fr [fundo-end] 1fr;
-  grid-template-areas: "close""text""text";
-  background: #fff;
-  width: 100vw;
-  overflow-x: hidden;
+    display: grid;
+    grid-template-columns: [fundo-start] auto [fundo-end];
+    grid-template-rows: [fundo-start] 45vh 1fr [fundo-end] 1fr;
+    grid-template-areas: "close""text""text";
+    background: #fff;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 dialog .closeModal {
-  grid-area: close;
-  justify-self: flex-end;
-  font-size: 1.1em;
-  color: #000;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 100%;
-  background: #fff;
-  text-align: center;
-  padding: 0.6rem;
-  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  z-index: 90;
-  line-height: 1rem;
-  position: relative;
-  right: 2rem;
-  top: 2rem;
+    grid-area: close;
+    justify-self: flex-end;
+    font-size: 1.1em;
+    color: #000;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 0.6rem;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 90;
+    line-height: 1rem;
+    right: 2rem;
+    top: 2rem;
+    align-self: flex-end;
+    position: fixed;
 }
 
 dialog img {
-  grid-area: fundo;
-  width: 100%;
-  min-height: 40vh;
-  object-fit: cover;
-  object-position: top;
+    grid-area: fundo;
+    width: 100%;
+    min-height: 50vh;
+    object-position: top;
+    justify-self: center;
+    max-width: 1040px;
+    object-fit: cover;
 }
 
 dialog .text {
-  display: grid;
-  grid-area: text;
-  padding: 3rem;
-  background: linear-gradient(to top, white 95%, rgba(255, 255, 255, 0.8) 100%);
-  border-radius: 1rem;
-  justify-content: center;
-  align-content: start;
-  width: -webkit-fill-available;
-  place-self: center;
-  box-shadow: 0px 1px 1px #ddd, 0 10px 20px #ccc;
+    display: grid;
+    grid-area: text;
+    padding: 3rem;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 94%, transparent 99%);
+    border-radius: 1rem;
+    justify-content: center;
+    align-content: start;
+    width: -webkit-fill-available;
+    place-self: center;
 }
 
 dialog h1 {
-  text-align: center;
-  background: linear-gradient(22deg,
-      hsla(200, 100%, 40%, 1),
-      hsla(230, 10%, 40%, 1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 4rem 0;
-  font-family: overlock;
-  font-size: 3rem;
-  line-height: 2.8rem;
+    text-align: center;
+    background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(230, 10%, 40%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 4rem 0;
+    font-family: overlock;
+    font-size: 3rem;
+    line-height: 2.8rem;
 }
 
 dialog h1 p {
-  max-width: 45rem;
-  line-height: 1.5rem;
-  margin: 1rem auto 0;
+    max-width: 45rem;
+    line-height: 1.5rem;
+    margin: 1rem auto 0;
 }
 
 dialog h1 svg {
-  fill: hsla(40, 100%, 70%, 1);
-  max-width: 40rem;
+    fill: hsla(40, 100%, 70%, 1);
+    max-width: 40rem;
 }
 
 dialog .paragraph {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 443px));
-  grid-gap: 2rem;
-  justify-content: center;
-  width: 100%;
-  max-width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 443px));
+    grid-gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1040px;
 }
 
 dialog .paragraph img {
-  min-height: 0;
+    min-height: 0;
+}
+
+dialog .paragraph label i {
+    position: relative;
+    bottom: 4rem;
+    left: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
 }
 
 dialog .paragraph h3 {
-  font-family: overlock;
-  font-size: 2.1rem;
-  color: hsla(230, 10%, 40%, 1);
+    font-family: overlock;
+    font-size: 2.1rem;
+    color: hsla(230, 10%, 40%, 1);
 }
 
-@media (max-width: 425px) {
-  dialog .text {
-    padding: 1rem;
-    box-shadow: none;
-  }
+dialog .paragraph a {
+    color: hsla(200, 100%, 40%, 1) !important;
+    text-decoration: none;
+}
 
-  dialog h1 {
-    font-size: 2.5rem;
-    margin: 2.5rem 0;
-  }
+dialog .paragraph a:hover {
+    text-decoration: underline;
+}
+
+dialog .figura {
+    position: fixed;
+    opacity: 0;
+    z-index: -10;
+    width: 100vw;
+    background: hsla(230, 10%, 40%, 0.9);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: .4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+dialog .figura img {
+    min-height: 0;
+    object-fit: contain;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 37.125px 70px -12.125px rgba(0,0,0,0.3);
+    transform: translateY(200%);
+    transition: .3s
+}
+
+#figura1:checked~div:nth-child(2) {
+    opacity: 1;
+    z-index: 100;
+}
+
+#figura1:checked~div img:nth-child(2) {
+    transform: translateY(0);
+}
+
+@media(max-width: 425px) {
+    dialog .text {
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    dialog h1 {
+        font-size: 2.5rem;
+        margin: 2.5rem 0;
+    }
 }

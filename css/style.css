@@ -96,7 +96,9 @@ dialog {
     transform: translateY(0) scale(1);
   }
 }
-
+label {
+  cursor: pointer;
+}
 
 /* F - Estilos gerais do site*/
 
@@ -679,7 +681,6 @@ main section a {
 }
 
 #slide #listaSlides label {
-  cursor: pointer;
   background: rgba(60, 64, 67, 0.8);
   margin: 1rem;
   width: 1.5rem;
