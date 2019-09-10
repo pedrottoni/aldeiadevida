@@ -1,736 +1,760 @@
 /* I - Modal */
 .closeModal {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: monospace;
-    color: #000;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
-    background: #fff;
-    text-align: center;
-    padding: .5rem;
-    line-height: 1rem;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
-    margin: 10px 0rem 0 -10px;
+  position: fixed;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: monospace;
+  color: #000;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1rem;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px 0rem 0 -10px;
 }
 
 .closeModal:hover {
-    cursor: pointer;
-    color: hsla(0, 100%, 70%, 1);
-    transition: all .5s;
+  cursor: pointer;
+  color: hsla(0, 100%, 70%, 1);
+  transition: all 0.5s;
 }
 
 .topoModal {
-    height: 18rem;
-    display: flex;
-    justify-content: flex-end;
+  height: 18rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .topoModalData {
-    background-size: contain;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    height: 14rem;
-    align-self: center;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  height: 14rem;
+  align-self: center;
 }
 
 .topoModalData h1 {
-    font-size: 4rem;
-    font-family: Oswald;
-    line-height: 1;
+  font-size: 4rem;
+  font-family: Oswald;
+  line-height: 1;
 }
 
 .topoModalData h2 {
-    font-size: 2.5rem;
-    font-family: Oswald;
+  font-size: 2.5rem;
+  font-family: Oswald;
 }
 
 .corpoModal h2 {
-    font-family: cinzel decorative;
-    background: radial-gradient(circle at 40% 0%, hsla(40, 100%, 70%, 1) 5%, rgb(244, 92, 67) 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.2rem;
-    text-align: center;
+  font-family: cinzel decorative;
+  background: radial-gradient(
+    circle at 40% 0%,
+    hsla(40, 100%, 70%, 1) 5%,
+    rgb(244, 92, 67) 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 .corpoModal h1 {
-    font-family: overlock;
-    text-align: center;
-    color: hsla(230, 10%, 40%, 1);
-    font-weight: normal;
-    padding-bottom: 2.5rem;
+  font-family: overlock;
+  text-align: center;
+  color: hsla(230, 10%, 40%, 1);
+  font-weight: normal;
+  padding-bottom: 2.5rem;
 }
 
-@media (max-width:767px) {
-    .corpoModal h1 {
-        font-size: 1.6rem;
-    }
+@media (max-width: 767px) {
+  .corpoModal h1 {
+    font-size: 1.6rem;
+  }
 
-    .corpoModal h2 {
-        font-size: 2rem;
-    }
+  .corpoModal h2 {
+    font-size: 2rem;
+  }
 }
 
 .corpoModal h3 {
-    font-family: overlock;
-    font-weight: normal;
-    font-size: 1.7rem;
-    color: hsla(230, 10%, 40%, 1);
+  font-family: overlock;
+  font-weight: normal;
+  font-size: 1.7rem;
+  color: hsla(230, 10%, 40%, 1);
 }
 
 .corpoModal p {
-    font-family: overlock;
-    font-size: 1.5rem;
-    color: hsla(230, 10%, 40%, 1);
-    font-weight: 300;
+  font-family: overlock;
+  font-size: 1.5rem;
+  color: hsla(230, 10%, 40%, 1);
+  font-weight: 300;
 }
 
 .corpoModal h3 {
-    background: radial-gradient(circle at 50% -40%, hsla(40, 100%, 70%, 1) 0%, rgb(244, 92, 67) 200%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: radial-gradient(
+    circle at 50% -40%,
+    hsla(40, 100%, 70%, 1) 0%,
+    rgb(244, 92, 67) 200%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .corpoModal .spanModal {
-    font-family: roboto;
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 300;
+  font-family: roboto;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 300;
 }
 
 .corpoModal hr {
-    color: #ccc;
-    border: 0.03rem solid;
-    margin: 2rem 0;
+  color: #ccc;
+  border: 0.03rem solid;
+  margin: 2rem 0;
 }
 
 .fundoModal {
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(#f9f9f9 40%, rgba(236, 237, 242, 0.8) 160%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#f9f9f9 40%, rgba(236, 237, 242, 0.8) 160%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
 }
 
 .molduraModal {
-    width: 720px;
-    height: 80vmin;
-    top: -100%;
-    position: relative;
-    overflow-y: scroll;
-    max-height: 620px;
-    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 720px;
+  height: 80vmin;
+  top: -100%;
+  position: relative;
+  overflow-y: scroll;
+  max-height: 620px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width:767px) {
-    .molduraModal {
-        top: 0 !important;
-        position: relative;
-        overflow-x: hidden;
-        height: 100%;
-        border-radius: 0;
-    }
-    .fundoModal {
-        background: radial-gradient(#f9f9f9 50%, rgba(236, 237, 242, 0.8) 190%);
-    }
+@media (max-width: 767px) {
+  .molduraModal {
+    top: 0 !important;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    border-radius: 0;
+  }
+  .fundoModal {
+    background: radial-gradient(#f9f9f9 50%, rgba(236, 237, 242, 0.8) 190%);
+  }
 }
 
 .corpoModal {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 /* F - Modal */
 /* I - modalDeus */
 #modalDeus {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalDeus:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalDeus:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalDeus .topoModalData {
-    background-image: url(../img/deus.png);
+  background-image: url(../img/valor-deus.png);
 }
 
 /* F - modalDeus */
 /* I - modalCriacao */
 #modalCriacao {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalCriacao:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalCriacao:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalCriacao .topoModalData {
-    background-image: url(../img/criação.png);
+  background-image: url(../img/valor-criacao.png);
 }
 
 /* F - modalCriacao */
 /* I - modalVida */
 #modalVida {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalVida:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalVida:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalVida .topoModalData {
-    background-image: url(../img/vida.png);
+  background-image: url(../img/valor-vida.png);
 }
 
 /* F - modalVida */
 /* I - modalFamilia */
 #modalFamilia {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalFamilia:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalFamilia:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalFamilia .topoModalData {
-    background-image: url(../img/família.png);
+  background-image: url(../img/valor-familia.png);
 }
 
 /* F - modalFamilia */
 /* I - modalEvangelho */
 #modalEvangelho {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalEvangelho:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalEvangelho:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalEvangelho .topoModalData {
-    background-image: url(../img/evangelho.png);
+  background-image: url(../img/valor-evangelho.png);
 }
 
 /* F - modalEvangelho */
 /* I - modalIgreja */
 #modalIgreja {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalIgreja:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalIgreja:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalIgreja .topoModalData {
-    background-image: url(../img/igreja.png);
+  background-image: url(../img/valor-igreja.png);
 }
 
 /* F - modalIgreja */
 /* I - modalOracao */
 #modalOracao {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalOracao:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalOracao:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalOracao .topoModalData {
-    background-image: url(../img/oração.png);
+  background-image: url(../img/valor-oracao.png);
 }
 
 /* F - modalOracao */
 /* I - modalSociedade */
 #modalSociedade {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalSociedade:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalSociedade:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalSociedade .topoModalData {
-    background-image: url(../img/sociedade.png);
+  background-image: url(../img/valor-sociedade.png);
 }
 
 /* F - modalSociedade */
 /* I - modalEtica */
 #modalEtica {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalEtica:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalEtica:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalEtica .topoModalData {
-    background-image: url(../img/ética.png);
+  background-image: url(../img/valor-etica.png);
 }
 
 /* F - modalEtica */
 /* I - modalVerdade */
 #modalVerdade {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalVerdade:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalVerdade:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalVerdade .topoModalData {
-    background-image: url(../img/verdade.png);
+  background-image: url(../img/valor-verdade.png);
 }
 
 /* F - modalVerdade */
 /* I - modalLiberdade */
 #modalLiberdade {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalLiberdade:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalLiberdade:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalLiberdade .topoModalData {
-    background-image: url(../img/liberdade.png);
+  background-image: url(../img/valor-liberdade.png);
 }
 
 /* F - modalLiberdade */
 /* I - modalArte */
 #modalArte {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalArte:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalArte:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalArte .topoModalData {
-    background-image: url(../img/arte.png);
+  background-image: url(../img/valor-arte.png);
 }
 
 /* F - modalArte */
 /* I - modalAmizade */
 #modalAmizade {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalAmizade:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalAmizade:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalAmizade .topoModalData {
-    background-image: url(../img/amizade.png);
+  background-image: url(../img/valor-amizade.png);
 }
 
 /* F - modalAmizade */
 /* I - modalTrabalho */
 #modalTrabalho {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalTrabalho:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalTrabalho:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalTrabalho .topoModalData {
-    background-image: url(../img/trabalho.png);
+  background-image: url(../img/valor-trabalho.png);
 }
 
 /* F - modalTrabalho */
 /* I - modalDinheiro */
 #modalDinheiro {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalDinheiro:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalDinheiro:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalDinheiro .topoModalData {
-    background-image: url(../img/dinheiro.png);
+  background-image: url(../img/valor-dinheiro.png);
 }
 
 /* F - modalDinheiro */
 /* I - modalFe */
 #modalFe {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalFe:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalFe:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalFe .topoModalData {
-    background-image: url(../img/fé.png);
+  background-image: url(../img/valor-fe.png);
 }
 
 /* F - modalFe */
 /* I - modalMisericordia */
 #modalMisericordia {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalMisericordia:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalMisericordia:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalMisericordia .topoModalData {
-    background-image: url(../img/misericórdia.png);
+  background-image: url(../img/valor-misericordia.png);
 }
 
 /* F - modalMisericordia */
 /* I - modalSantidade */
 #modalSantidade {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalSantidade:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalSantidade:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalSantidade .topoModalData {
-    background-image: url(../img/santidade.png);
+  background-image: url(../img/valor-santidade.png);
 }
 
 /* F - modalSantidade */
 /* I - modalTempo */
 #modalTempo {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalTempo:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalTempo:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalTempo .topoModalData {
-    background-image: url(../img/tempo.png);
+  background-image: url(../img/valor-tempo.png);
 }
 
 /* F - modalTempo */
 /* I - modalCeu */
 #modalCeu {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 #modalCeu:target {
-    opacity: 1;
-    z-index: 300;
+  opacity: 1;
+  z-index: 300;
 }
 
 #modalCeu:target .molduraModal {
-    top: 0px;
+  top: 0px;
 }
 
 #modalCeu .topoModalData {
-    background-image: url(../img/céu.png);
+  background-image: url(../img/valor-ceu.png);
 }
 
 /* F - modalCeu */
 /* I - Sec1 */
 
 #sec1 .contSec1 {
-    padding-top: 8rem;
-    padding-bottom: 5rem;
-    margin-bottom: .2rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0.2rem;
 }
 
 @media (max-width: 425px) {
-    #sec1 .sectionTitleText {
-        font-size: 1.2rem;
-    }
+  #sec1 .sectionTitleText {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 766px) {
-    #sec1 .capa::after {
-        top: -3rem;
-    }
+  #sec1 .capa::after {
+    top: -3rem;
+  }
 
-    #sec1 .sectionTitleText {
-        top: -1rem;
-    }
+  #sec1 .sectionTitleText {
+    top: -1rem;
+  }
 }
 
 #sec1 .cards {
-    margin-top: 4rem;
-    z-index: 0;
-    display: grid;
-    grid-gap: .6rem;
-    grid-template-columns: repeat(auto-fit, minmax(calc(11rem + 4rem), calc(11rem + 4rem)));
-    grid-auto-rows: auto;
-    width: calc(100vw - 5rem);
-    max-width: 1200px;
-    justify-content: center;
+  margin-top: 4rem;
+  z-index: 0;
+  display: grid;
+  grid-gap: 0.6rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(11rem + 4rem), calc(11rem + 4rem))
+  );
+  grid-auto-rows: auto;
+  width: calc(100vw - 5rem);
+  max-width: 1200px;
+  justify-content: center;
 }
 
-@media (max-width:767px) {
-    #sec1 .cards {
-        grid-gap: 4rem;
-        grid-template-columns: repeat(auto-fit, minmax(calc(11rem + 4rem), calc(11rem + 4rem)));
-        grid-auto-rows: auto;
-        grid-gap: 1.5rem;
-        display: grid;
-        width: calc(100vw - 5rem);
-    }
+@media (max-width: 767px) {
+  #sec1 .cards {
+    grid-gap: 4rem;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(11rem + 4rem), calc(11rem + 4rem))
+    );
+    grid-auto-rows: auto;
+    grid-gap: 1.5rem;
+    display: grid;
+    width: calc(100vw - 5rem);
+  }
 }
 
 #sec1 .cards h1 {
-    width: 100%;
-    height: 65px;
-    border: none;
-    font-family: cinzel decorative;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: hsla(0, 100%, 70%, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(circle at 50% -40%, hsla(40, 100%, 70%, 1) 0%, rgb(244, 92, 67) 200%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  width: 100%;
+  height: 65px;
+  border: none;
+  font-family: cinzel decorative;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: hsla(0, 100%, 70%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 50% -40%,
+    hsla(40, 100%, 70%, 1) 0%,
+    rgb(244, 92, 67) 200%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #sec1 .cards h3 {
-    font-weight: normal;
-    font-family: overlock;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: hsla(230, 10%, 40%, 1);
+  font-weight: normal;
+  font-family: overlock;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: hsla(230, 10%, 40%, 1);
 }
 
 #sec1 .cards hr {
-    width: 100%;
-    opacity: 0.6;
-    position: relative;
-    top: 4px;
-    color: #ccc;
-    border: 0.03rem solid;
+  width: 100%;
+  opacity: 0.6;
+  position: relative;
+  top: 4px;
+  color: #ccc;
+  border: 0.03rem solid;
 }
 
 #sec1 .cards p {
-    font-weight: 400;
-    font-size: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 #sec1 .cards a {
-    text-decoration: none;
-    color: unset;
+  text-decoration: none;
+  color: unset;
 }
 
 #sec1 .card {
-    width: 11.5rem;
-    border-radius: .3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 1.8rem;
-    transition: all .5s;
-    background: #fff;
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .16), 0 1px 3px 1px rgba(60, 64, 67, .24);
+  width: 11.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.8rem;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 1px 3px 1px rgba(60, 64, 67, 0.24);
 }
 
 #sec1 .card p {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 #sec1 .card:hover {
-    transform: translateZ(.1rem);
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 20px 1px rgba(60, 64, 67, .16);
-    background: #fff;
+  transform: translateZ(0.1rem);
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+    0 1px 20px 1px rgba(60, 64, 67, 0.16);
+  background: #fff;
 }
 
 #sec1 .card img {
-    width: 180px;
-    padding-bottom: .5rem;
+  width: 180px;
+  padding-bottom: 0.5rem;
 }
 
 #sec1 .cards .botSaibaMais {
-    width: 9rem;
-    height: 42px;
-    background: #ecedf2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.2);
-    border-radius: .2rem;
-    margin: 0.5rem 0px 1rem 0rem;
-    font-size: 1.1rem;
-    position: relative;
-    bottom: -10px;
-    font-variant-caps: all-petite-caps;
-    border: 1px solid hsla(0, 0%, 80%, 0.25);
-    transition: all .3s cubic-bezier(0.4, 0, 1, 1);
+  width: 9rem;
+  height: 42px;
+  background: #ecedf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+  margin: 0.5rem 0px 1rem 0rem;
+  font-size: 1.1rem;
+  position: relative;
+  bottom: -10px;
+  font-variant-caps: all-petite-caps;
+  border: 1px solid hsla(0, 0%, 80%, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 #sec1 .card:hover .botSaibaMais {
-    background: linear-gradient(90deg, hsla(200, 100%, 40%, 1) 73%, hsla(230, 10%, 40%, 1) 150%);
-    color: #fff;
-    transition: all .3s ease-out;
+  background: linear-gradient(
+    90deg,
+    hsla(200, 100%, 40%, 1) 73%,
+    hsla(230, 10%, 40%, 1) 150%
+  );
+  color: #fff;
+  transition: all 0.3s ease-out;
 }

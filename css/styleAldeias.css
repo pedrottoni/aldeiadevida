@@ -1,1026 +1,1093 @@
 .capa::after {
-    top: 3rem;
+  top: 3rem;
 }
 
 @media (max-width: 766px) {
-    #sec1 .capa::after {
-        top: 2rem;
-    }
+  #sec1 .capa::after {
+    top: 2rem;
+  }
 }
 /* I - Sec3 */
 
 #sec3 {
-    background: linear-gradient(to right, hsla(170, 100%, 70%, 1) 5%, hsla(200, 100%, 40%, 1) 50%, hsla(170, 100%, 70%, 1) 95%);
+  background: linear-gradient(
+    to right,
+    hsla(170, 100%, 70%, 1) 5%,
+    hsla(200, 100%, 40%, 1) 50%,
+    hsla(170, 100%, 70%, 1) 95%
+  );
 }
 
 #sec3 .contSec3 {
-    padding-bottom: 8rem;
+  padding-bottom: 8rem;
 }
 
 .sectionTitleCenter2 {
-    font-size: calc(3vmax + 1.8rem);
-    background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(170, 100%, 70%, 1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: calc(3vmax + 1.8rem);
+  background: linear-gradient(
+    22deg,
+    hsla(200, 100%, 40%, 1),
+    hsla(170, 100%, 70%, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #sec3 .sectionTitleText {
-    max-width: 1040px;
-    font-family: overlock;
-    height: auto;
-    top: -1rem;
+  max-width: 1040px;
+  font-family: overlock;
+  height: auto;
+  top: -1rem;
 }
 
 .textoCapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
 }
 
-#sec3 .contSec3 .info{
-    font-weight: 500;
-    text-align: center;
-    margin: 1rem;
+#sec3 .contSec3 .info {
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
 }
 
 .abrirTextoOculto {
-    width: 2.2rem;
-    height: 2.2rem;
-    font-size: 2rem;
-    background: #fff;
-    border: .4rem solid #fafafa;
-    border-radius: 100%;
-    text-align: center;
-    align-items: center;
-    padding: .5rem;
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .16), 0 1px 3px 1px rgba(60, 64, 67, .24);
-    transition: all .4s;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 2rem;
+  background: #fff;
+  border: 0.4rem solid #fafafa;
+  border-radius: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 1px 3px 1px rgba(60, 64, 67, 0.24);
+  transition: all 0.4s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .abrirTextoOculto:hover,
 .abrirTextoOculto:hover::after {
-    color: #fff;
-    opacity: 1;
-    box-shadow: 0 -1px 1px 0 rgba(60, 64, 67, .16), 0 -1px 3px 1px rgba(60, 64, 67, .24)
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 -1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 -1px 3px 1px rgba(60, 64, 67, 0.24);
 }
 
 .abrirTextoOculto::after {
-    content: "";
-    width: 2.2rem;
-    height: 2.2rem;
-    font-size: 0;
-    background: linear-gradient(22deg, hsla(170, 100%, 70%, 1), hsla(200, 100%, 40%, 1));
-    border-radius: 100%;
-    padding: 0.5rem;
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .16), 0 1px 3px 1px rgba(60, 64, 67, .24);
-    transition: all .4s;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 0;
+  background: linear-gradient(
+    22deg,
+    hsla(170, 100%, 70%, 1),
+    hsla(200, 100%, 40%, 1)
+  );
+  border-radius: 100%;
+  padding: 0.5rem;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 1px 3px 1px rgba(60, 64, 67, 0.24);
+  transition: all 0.4s;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
 }
 
 #sec3 .textoOculto {
-    transition: opacity .3s, transform .3s, font-size .5s .3s;
-    opacity: .0;
-    z-index: -1;
-    font-size: 0;
-    background: hsla(0, 0%, 98%, 1);
-    border-radius: 1rem;
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .16), 0 1px 3px 1px rgba(60, 64, 67, .24);
-    top: -1.5rem;
-    position: relative;
-    transform: scaleY(0);
-    transform-origin: top;
-    padding: 0;
+  transition: opacity 0.3s, transform 0.3s, font-size 0.5s 0.3s;
+  opacity: 0;
+  z-index: -1;
+  font-size: 0;
+  background: hsla(0, 0%, 98%, 1);
+  border-radius: 1rem;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 1px 3px 1px rgba(60, 64, 67, 0.24);
+  top: -1.5rem;
+  position: relative;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding: 0;
 }
 
-#controlTextoOculto:checked~.abrirTextoOculto {
-    transform: rotateZ(180deg);
-    box-shadow: 0 -1px 1px 0 rgba(60, 64, 67, .16), 0 -1px 3px 1px rgba(60, 64, 67, .24)
+#controlTextoOculto:checked ~ .abrirTextoOculto {
+  transform: rotateZ(180deg);
+  box-shadow: 0 -1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 -1px 3px 1px rgba(60, 64, 67, 0.24);
 }
 
-#controlTextoOculto:checked~.textoOculto {
-    font-size: 1rem;
-    opacity: 1;
-    display: block;
-    padding: 4rem;
-    transform: scaleY(1);
-    transform-origin: top;
-    padding: 4rem;
+#controlTextoOculto:checked ~ .textoOculto {
+  font-size: 1rem;
+  opacity: 1;
+  display: block;
+  padding: 4rem;
+  transform: scaleY(1);
+  transform-origin: top;
+  padding: 4rem;
 }
 
-#controlTextoOculto:checked~.textoOculto .capaTextoOculto {
-    display: flex;
+#controlTextoOculto:checked ~ .textoOculto .capaTextoOculto {
+  display: flex;
 }
 
 .capaTextoOculto {
-    display: none;
+  display: none;
 }
 
 .capaTextoOculto h1 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .capaTextoOculto h3 {
-    font-size: 3rem !important;
+  font-size: 3rem !important;
 }
 
 .capaTextoOculto::after {
-    display: none;
+  display: none;
 }
 
 .capaTextoOculto .sectionTitleCenter2 {
-    height: auto;
+  height: auto;
 }
 
-
 #sec3 .textoOculto .sectionTitleText {
-    max-width: 40rem;
-    height: auto;
-    top: 0rem;
-    text-align: left;
+  max-width: 40rem;
+  height: auto;
+  top: 0rem;
+  text-align: left;
 }
 
 #sec3 .textoOculto hr {
-    height: .08rem;
-    border-radius: 1rem;
-    background: #eee;
-    border: 1px solid #fff;
-    margin: 0 auto;
+  height: 0.08rem;
+  border-radius: 1rem;
+  background: #eee;
+  border: 1px solid #fff;
+  margin: 0 auto;
 }
 
-#sec3 .contSec3 .divisor{
-    border: 1px solid;
-    width: 90%;
-    margin: 2rem 0 0;
-    color: #ccc;
+#sec3 .contSec3 .divisor {
+  border: 1px solid;
+  width: 90%;
+  margin: 2rem 0 0;
+  color: #ccc;
 }
 
 .contSec3 .cards {
-    margin-top: 2rem;
-    width: 100%;
-    z-index: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, calc(17rem + 4rem)));
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
-    justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, calc(17rem + 4rem)));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  justify-content: center;
 }
 
 .contSec3 .card {
-    background: #fff;
-    border-radius: .3rem;
-    border: .8rem solid #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .16), 0 1px 3px 1px rgba(60, 64, 67, .24);
-    transition: .3s;
+  background: #fff;
+  border-radius: 0.3rem;
+  border: 0.8rem solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.16),
+    0 1px 3px 1px rgba(60, 64, 67, 0.24);
+  transition: 0.3s;
 }
 
 .contSec3 .card:hover {
-    transform: translateZ(.1rem);
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 20px 1px rgba(60, 64, 67, .16);
+  transform: translateZ(0.1rem);
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+    0 1px 20px 1px rgba(60, 64, 67, 0.16);
 }
 
 .contSec3 .card img {
-    width: 100%;
-    height: 13rem;
-    border-radius: .3rem .3rem 0 0;
-    object-fit: cover;
-    object-position: top;
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-    transition: .5s;
+  width: 100%;
+  height: 13rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+  object-fit: cover;
+  object-position: top;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+  transition: 0.5s;
 }
 
 .contSec3 .card:hover img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .contSec3 .card::after {
-    content: "";
-    height: 42px;
-    background: transparent;
-    position: relative;
-    border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
-    width: 90vw;
-    border-top: 3px solid hsla(40, 100%, 70%, 1);
-    transform: rotate(1deg) translateY(-4.5rem) scaleX(0);
-    top: 5rem;
-    max-width: 10rem;
-    transition: .4s .1s;
-    opacity: 0;
-
+  content: "";
+  height: 42px;
+  background: transparent;
+  position: relative;
+  border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
+  width: 90vw;
+  border-top: 3px solid hsla(40, 100%, 70%, 1);
+  transform: rotate(1deg) translateY(-4.5rem) scaleX(0);
+  top: 5rem;
+  max-width: 10rem;
+  transition: 0.4s 0.1s;
+  opacity: 0;
 }
 
 .contSec3 .card:hover::after {
-    opacity: 1;
-    transform: rotate(1deg) translateY(-4.5rem) scaleX(1);
+  opacity: 1;
+  transform: rotate(1deg) translateY(-4.5rem) scaleX(1);
 }
 
 .contSec3 .card h1 {
-    font-size: 1.70rem;
-    z-index: 4;
-    font-family: overlock;
-    font-weight: bold;
-    text-align: center;
-    align-self: center;
-    padding-top: 2rem;
-    letter-spacing: -.03rem;
-    background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(170, 100%, 70%, 1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 1.7rem;
+  z-index: 4;
+  font-family: overlock;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  padding-top: 2rem;
+  letter-spacing: -0.03rem;
+  background: linear-gradient(
+    22deg,
+    hsla(200, 100%, 40%, 1),
+    hsla(170, 100%, 70%, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.contSec3 .card .h1card{
-    font-weight: normal;
-    background: hsla(230, 10%, 40%, 1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
-    top: .4rem;
-    position: relative;
+.contSec3 .card .h1card {
+  font-weight: normal;
+  background: hsla(230, 10%, 40%, 1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  top: 0.4rem;
+  position: relative;
 }
 
 /* I - Modal */
 
 .closeModal {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-family: monospace;
-    color: #000;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
-    background: #fff;
-    text-align: center;
-    padding: .6rem;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
-    margin: 10px 0rem 0 -10px;
-    z-index: 300;
+  position: fixed;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: monospace;
+  color: #000;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+  padding: 0.6rem;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px 0rem 0 -10px;
+  z-index: 300;
 }
 
 .closeModal:hover {
-    cursor: pointer;
-    color: hsla(0, 100%, 70%, 1);
-    transition: all .5s;
+  cursor: pointer;
+  color: hsla(0, 100%, 70%, 1);
+  transition: all 0.5s;
 }
 
 .topoModalData {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
 }
 
 .corpoModal .eventoNome {
-    font-family: overlock;
-    background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(170, 100%, 70%, 1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  font-family: overlock;
+  background: linear-gradient(
+    22deg,
+    hsla(200, 100%, 40%, 1),
+    hsla(170, 100%, 70%, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .corpoModal .eventoNome::after {
-    content: "";
-    height: 42px;
-    background: transparent;
-    position: relative;
-    border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
-    width: 280px;
-    z-index: 243;
-    border-top: 5px solid hsla(40, 100%, 70%, 1);
-    transform: rotate(1deg) translateY(-4.5rem);
-    bottom: -5rem;
+  content: "";
+  height: 42px;
+  background: transparent;
+  position: relative;
+  border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
+  width: 280px;
+  z-index: 243;
+  border-top: 5px solid hsla(40, 100%, 70%, 1);
+  transform: rotate(1deg) translateY(-4.5rem);
+  bottom: -5rem;
 }
 
 .corpoModal h3 {
-    font-family: roboto;
-    font-weight: 400;
-    font-size: 1.3rem;
-    color: #000;
-    letter-spacing: -0.05rem;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #000;
+  letter-spacing: -0.05rem;
 }
 
 .corpoModal p {
-    font-family: roboto;
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 300;
-    letter-spacing: -0.05rem;
+  font-family: roboto;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
 }
 
 .corpoModal .spanModal {
-    font-family: roboto;
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 300;
-    letter-spacing: -0.05rem;
+  font-family: roboto;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
 }
 
 .corpoModal hr {
-    color: #ccc;
-    border: 0.03rem solid;
-    margin: .8rem 0;
+  color: #ccc;
+  border: 0.03rem solid;
+  margin: 0.8rem 0;
 }
 
 .fundoModal {
-    width: 100%;
-    height: 100%;
-    background: hsla(230, 10%, 40%, 0.90);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background: hsla(230, 10%, 40%, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
 }
 
 .molduraModal {
-    width: 37rem;
-    border: 1rem solid #f9f9f9;
-    border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
-    background: #f9f9f9;
-    top: -100%;
-    position: relative;
-    height: 80vmin;
-    overflow-y: scroll;
-    max-height: 620px;
-    box-shadow: 0 1px 70px 0 rgb(60, 64, 67), 0 1px 3px 1px rgba(60, 64, 67, 0.5);
-    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1) .3s;
+  width: 37rem;
+  border: 1rem solid #f9f9f9;
+  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  background: #f9f9f9;
+  top: -100%;
+  position: relative;
+  height: 80vmin;
+  overflow-y: scroll;
+  max-height: 620px;
+  box-shadow: 0 1px 70px 0 rgb(60, 64, 67), 0 1px 3px 1px rgba(60, 64, 67, 0.5);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
 .corpoModal {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* F - Modal */
 /* I - modalVidaEmFamilia */
 
 #modalVidaEmFamilia {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlModalVidaEmFamilia:checked~#modalVidaEmFamilia {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlModalVidaEmFamilia:checked~#modalVidaEmFamilia .molduraModal {
-    top: 0;
+#controlModalVidaEmFamilia:checked ~ #modalVidaEmFamilia {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlModalVidaEmFamilia:checked ~ #modalVidaEmFamilia .molduraModal {
+  top: 0;
 }
 
 #modalVidaEmFamilia .topoModal {
-    height: 25rem;
-    background-image: url(../img/vidaEmFamilia.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-vida-em-familia.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalVidaEmFamilia */
 /* I - modalAldeiaDeAdolescentes */
 
 #modalAldeiaDeAdolescentes {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaDeAdolescentes:checked~#modalAldeiaDeAdolescentes {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaDeAdolescentes:checked~#modalAldeiaDeAdolescentes .molduraModal {
-    top: 0;
+#controlmodalAldeiaDeAdolescentes:checked ~ #modalAldeiaDeAdolescentes {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaDeAdolescentes:checked
+  ~ #modalAldeiaDeAdolescentes
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaDeAdolescentes .topoModal {
-    height: 25rem;
-    background-image: url(../img/adolescentes.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-de-adolescentes.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaDeAdolescentes */
 /* I - modalAldeiaDeJovens */
 
 #modalAldeiaDeJovens {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaDeJovens:checked~#modalAldeiaDeJovens {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaDeJovens:checked~#modalAldeiaDeJovens .molduraModal {
-    top: 0;
+#controlmodalAldeiaDeJovens:checked ~ #modalAldeiaDeJovens {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaDeJovens:checked ~ #modalAldeiaDeJovens .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaDeJovens .topoModal {
-    height: 25rem;
-    background-image: url(../img/jovens.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-de-jovens.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaDeJovens */
 /* I - modalAldeiadeAprofundamento */
 
 #modalAldeiadeAprofundamento {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiadeAprofundamento:checked~#modalAldeiadeAprofundamento {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiadeAprofundamento:checked~#modalAldeiadeAprofundamento .molduraModal {
-    top: 0;
+#controlmodalAldeiadeAprofundamento:checked ~ #modalAldeiadeAprofundamento {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiadeAprofundamento:checked
+  ~ #modalAldeiadeAprofundamento
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiadeAprofundamento .topoModal {
-    height: 25rem;
-    background-image: url(../img/aprofundamento.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-de-aprofundamento.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiadeAprofundamento */
 /* I - modalAldeiaAliançasdeVida */
 
 #modalAldeiaAliançasdeVida {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaAliançasdeVida:checked~#modalAldeiaAliançasdeVida {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaAliançasdeVida:checked~#modalAldeiaAliançasdeVida .molduraModal {
-    top: 0;
+#controlmodalAldeiaAliançasdeVida:checked ~ #modalAldeiaAliançasdeVida {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaAliançasdeVida:checked
+  ~ #modalAldeiaAliançasdeVida
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaAliançasdeVida .topoModal {
-    height: 25rem;
-    background-image: url(../img/aliancasDeVida.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-aliancas-de-vida.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalVidaEmodalAldeiaAliançasdeVidamFamilia */
 /* I - modalAldeiaRecomeçodeVida */
 
 #modalAldeiaRecomeçodeVida {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaRecomeçodeVida:checked~#modalAldeiaRecomeçodeVida {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaRecomeçodeVida:checked~#modalAldeiaRecomeçodeVida .molduraModal {
-    top: 0;
+#controlmodalAldeiaRecomeçodeVida:checked ~ #modalAldeiaRecomeçodeVida {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaRecomeçodeVida:checked
+  ~ #modalAldeiaRecomeçodeVida
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaRecomeçodeVida .topoModal {
-    height: 25rem;
-    background-image: url(../img/recomecoDeVida.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-recomeco-de-vida.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaRecomeçodeVida */
 /* I - modalAldeiaoMelhorDaVida */
 
 #modalAldeiaoMelhorDaVida {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaoMelhorDaVida:checked~#modalAldeiaoMelhorDaVida {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaoMelhorDaVida:checked~#modalAldeiaoMelhorDaVida .molduraModal {
-    top: 0;
+#controlmodalAldeiaoMelhorDaVida:checked ~ #modalAldeiaoMelhorDaVida {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaoMelhorDaVida:checked
+  ~ #modalAldeiaoMelhorDaVida
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaoMelhorDaVida .topoModal {
-    height: 25rem;
-    background-image: url(../img/oMelhorDaVida.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-o-melhor-da-vida.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaoMelhorDaVida */
 /* I - modalAldeiaRedescobrindoAVida */
 
 #modalAldeiaRedescobrindoAVida {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaRedescobrindoAVida:checked~#modalAldeiaRedescobrindoAVida {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaRedescobrindoAVida:checked~#modalAldeiaRedescobrindoAVida .molduraModal {
-    top: 0;
+#controlmodalAldeiaRedescobrindoAVida:checked ~ #modalAldeiaRedescobrindoAVida {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaRedescobrindoAVida:checked
+  ~ #modalAldeiaRedescobrindoAVida
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaRedescobrindoAVida .topoModal {
-    height: 25rem;
-    background-image: url(../img/redescobrindoAVida.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-redescobrindo-a-vida.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaRedescobrindoAVida */
 /* I - modalAldeiaLíderesDaPróximaDécada */
 
 #modalAldeiaLíderesDaPróximaDécada {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaLíderesDaPróximaDécada:checked~#modalAldeiaLíderesDaPróximaDécada {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaLíderesDaPróximaDécada:checked~#modalAldeiaLíderesDaPróximaDécada .molduraModal {
-    top: 0;
+#controlmodalAldeiaLíderesDaPróximaDécada:checked
+  ~ #modalAldeiaLíderesDaPróximaDécada {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaLíderesDaPróximaDécada:checked
+  ~ #modalAldeiaLíderesDaPróximaDécada
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaLíderesDaPróximaDécada .topoModal {
-    height: 25rem;
-    background-image: url(../img/lideresDaProximaDecada.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-lideres-da-proxima-decada.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaLíderesDaPróximaDécada */
 /* I - modalAldeiaASociedadeDoFuturo */
 
 #modalAldeiaASociedadeDoFuturo {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;}
-
-#controlmodalAldeiaASociedadeDoFuturo:checked~#modalAldeiaASociedadeDoFuturo {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaASociedadeDoFuturo:checked~#modalAldeiaASociedadeDoFuturo .molduraModal {
-    top: 0;
+#controlmodalAldeiaASociedadeDoFuturo:checked ~ #modalAldeiaASociedadeDoFuturo {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
+}
+
+#controlmodalAldeiaASociedadeDoFuturo:checked
+  ~ #modalAldeiaASociedadeDoFuturo
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaASociedadeDoFuturo .topoModal {
-    height: 25rem;
-    background-image: url(../img/aSociedadeDoFuturo.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-a-sociedade-do-futuro.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaASociedadeDoFuturo */
 /* I - modalAldeiaMinhaVidaMinhaEmpresa */
 
 #modalAldeiaMinhaVidaMinhaEmpresa {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaMinhaVidaMinhaEmpresa:checked~#modalAldeiaMinhaVidaMinhaEmpresa {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+#controlmodalAldeiaMinhaVidaMinhaEmpresa:checked
+  ~ #modalAldeiaMinhaVidaMinhaEmpresa {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaMinhaVidaMinhaEmpresa:checked~#modalAldeiaMinhaVidaMinhaEmpresa .molduraModal {
-    top: 0;
+#controlmodalAldeiaMinhaVidaMinhaEmpresa:checked
+  ~ #modalAldeiaMinhaVidaMinhaEmpresa
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaMinhaVidaMinhaEmpresa .topoModal {
-    height: 25rem;
-    background-image: url(../img/minhaVidaMinhaEmpresa.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-minha-vida-minha-empresa.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaMinhaVidaMinhaEmpresa */
 /* I - modalAldeiaParaEducadores */
 
 #modalAldeiaParaEducadores {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease .5s;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaParaEducadores:checked~#modalAldeiaParaEducadores {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease .5s;
+#controlmodalAldeiaParaEducadores:checked ~ #modalAldeiaParaEducadores {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease 0.5s;
 }
 
-#controlmodalAldeiaParaEducadores:checked~#modalAldeiaParaEducadores .molduraModal {
-    top: 0;
+#controlmodalAldeiaParaEducadores:checked
+  ~ #modalAldeiaParaEducadores
+  .molduraModal {
+  top: 0;
 }
 
 #modalAldeiaParaEducadores .topoModal {
-    height: 25rem;
-    background-image: url(../img/educadores.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/aldeia-educadores.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalAldeiaParaEducadores */
 
-@media (max-width:767px) {
-    .molduraModal {
-        top: 0 !important;
-        position: relative;
-        overflow-x: hidden;
-        height: 100%;
-        border: 0;
-    }
+@media (max-width: 767px) {
+  .molduraModal {
+    top: 0 !important;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    border: 0;
+  }
 
-    .corpoModal .eventoNome {
-        font-size: 2rem;
-        padding-top: 1rem;
-    }
+  .corpoModal .eventoNome {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 /* F - Seciton 3 */
 /* I - Seciton 4 */
 
 #sec4 {
-    z-index: 0;
+  z-index: 0;
 }
 
 #sec4 .sec4Cont {
-    background: #f9f9f9;
-    width: 100vw;
-    max-width: 1040px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 2rem;
-    padding: 10rem;
-    z-index: 0;
-    position: relative;
-    margin: 0 auto;
-    right: 30vw;
+  background: #f9f9f9;
+  width: 100vw;
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  padding: 10rem;
+  z-index: 0;
+  position: relative;
+  margin: 0 auto;
+  right: 30vw;
 }
 
 #sec4 .sec4Intro {
-    padding-left: 2rem;
-    max-width: 90vw;
+  padding-left: 2rem;
+  max-width: 90vw;
 }
 
 #sec4 .sec4Cont .sectionTitleText {
-    top: -1rem;
-    height: auto;
-    width: auto;
+  top: -1rem;
+  height: auto;
+  width: auto;
 }
 
 #sec4 .sec4Cont .capa {
-    align-items: baseline;
+  align-items: baseline;
 }
 
 #sec4 .sec4Cont .capa .sectionTitleCenter1 {
-    font-size: calc(1vmax + .8rem);
+  font-size: calc(1vmax + 0.8rem);
 }
 
 #sec4 .sec4Cont .capa .sectionTitleCenter2 {
-    font-size: calc(2vmax + 1rem);
+  font-size: calc(2vmax + 1rem);
 }
 
 #sec4 .sec4Cont .sectionTitleText {
-    text-align: left;
-    max-width: 100%;
+  text-align: left;
+  max-width: 100%;
 }
 
 #sec4 .sec4Cont .capa::after {
-    max-width: 20rem;
-    top: 2rem;
-    height: 1rem;
-    border-top: 4px solid hsla(40, 100%, 70%, 1);
+  max-width: 20rem;
+  top: 2rem;
+  height: 1rem;
+  border-top: 4px solid hsla(40, 100%, 70%, 1);
 }
 
 #sec4 .sec4Cont .sec4Cards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-right: 2rem;
-    max-width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 2rem;
+  max-width: 100vw;
 }
 
 #sec4 .sec4Cont .sec4Cards .emblema {
-    width: 7rem;
-    height: 7rem;
-    margin: 0 .3rem;
-    padding: 1rem;
-    background: linear-gradient(-10deg, hsla(40, 100%, 70%, 1) 0%, hsla(0, 100%, 70%, 1) 150%);
-    border: .6rem solid #fff;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 1px rgba(60, 64, 67, .16);
-    transition: .4s;
-    cursor: pointer;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 0.3rem;
+  padding: 1rem;
+  background: linear-gradient(
+    -10deg,
+    hsla(40, 100%, 70%, 1) 0%,
+    hsla(0, 100%, 70%, 1) 150%
+  );
+  border: 0.6rem solid #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+    0 1px 3px 1px rgba(60, 64, 67, 0.16);
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 #sec4 .sec4Cont .sec4Cards .emblema:hover {
-    transform: translateZ(.1rem);
-    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 20px 1px rgba(60, 64, 67, .16)
+  transform: translateZ(0.1rem);
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+    0 1px 20px 1px rgba(60, 64, 67, 0.16);
 }
 
 #sec4 .sec4Cont .sec4Cards .line1 {
-    display: flex;
-    margin: 0;
-    transform-style: preserve-3d;
+  display: flex;
+  margin: 0;
+  transform-style: preserve-3d;
 }
 
 #sec4 .sec4Cont .sec4Cards .line2 {
-    display: flex;
-    margin: .5rem;
-    transform-style: preserve-3d;
+  display: flex;
+  margin: 0.5rem;
+  transform-style: preserve-3d;
 }
 
 @media (max-width: 766px) {
+  #sec4 .sec4Cont .capa {
+    align-items: center;
+  }
 
-    #sec4 .sec4Cont .capa {
-        align-items: center;
-    }
+  #sec4 .sec4Cont .sec4Cards {
+    padding-right: 0;
+  }
 
-    #sec4 .sec4Cont .sec4Cards {
-        padding-right: 0;
-    }
+  #sec4 .sec4Cont .sec4Cards .line1 {
+    display: block;
+    margin: 0rem;
+  }
 
-    #sec4 .sec4Cont .sec4Cards .line1 {
-        display: block;
-        margin: 0rem;
-    }
+  #sec4 .sec4Cont .sec4Cards .line2 {
+    display: block;
+    margin: -1rem;
+  }
 
-    #sec4 .sec4Cont .sec4Cards .line2 {
-        display: block;
-        margin: -1rem;
-    }
-
-    #sec4 .sec4Cont .sec4Cards .emblema {
-        margin: 1rem 0;
-    }
+  #sec4 .sec4Cont .sec4Cards .emblema {
+    margin: 1rem 0;
+  }
 }
 
 #sec4 .sec4Cont .sec4Cards .emblema h1 {
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: overlock;
-    text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: overlock;
+  text-align: center;
 }
 
 /* I - modalEmblemaCotidiana */
 
 #modalEmblemaCotidiana {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaCotidiana:checked~#modalEmblemaCotidiana {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease;
+#controlmodalEmblemaCotidiana:checked ~ #modalEmblemaCotidiana {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaCotidiana:checked~#modalEmblemaCotidiana .molduraModal {
-    top: 0;
+#controlmodalEmblemaCotidiana:checked ~ #modalEmblemaCotidiana .molduraModal {
+  top: 0;
 }
 
 #modalEmblemaCotidiana .topoModal {
-    height: 25rem;
-    background-image: url(../img/vidaEmFamilia.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/vidaEmFamilia.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalEmblemaCotidiana */
 /* I - modalEmblemaPermanente */
 
 #modalEmblemaPermanente {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaPermanente:checked~#modalEmblemaPermanente {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease;
+#controlmodalEmblemaPermanente:checked ~ #modalEmblemaPermanente {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaPermanente:checked~#modalEmblemaPermanente .molduraModal {
-    top: 0;
+#controlmodalEmblemaPermanente:checked ~ #modalEmblemaPermanente .molduraModal {
+  top: 0;
 }
 
 #modalEmblemaPermanente .topoModal {
-    height: 25rem;
-    background-image: url(../img/vidaEmFamilia.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/vidaEmFamilia.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalEmblemaPermanente */
 /* I - modalEmblemaIntermediaria */
 
 #modalEmblemaIntermediaria {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaIntermediaria:checked~#modalEmblemaIntermediaria {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease;
+#controlmodalEmblemaIntermediaria:checked ~ #modalEmblemaIntermediaria {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaIntermediaria:checked~#modalEmblemaIntermediaria .molduraModal {
-    top: 0;
+#controlmodalEmblemaIntermediaria:checked
+  ~ #modalEmblemaIntermediaria
+  .molduraModal {
+  top: 0;
 }
 
 #modalEmblemaIntermediaria .topoModal {
-    height: 25rem;
-    background-image: url(../img/vidaEmFamilia.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/vidaEmFamilia.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalEmblemaIntermediaria */
 /* I - modalEmblemaCompromisso */
 
 #modalEmblemaCompromisso {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaCompromisso:checked~#modalEmblemaCompromisso {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease;
+#controlmodalEmblemaCompromisso:checked ~ #modalEmblemaCompromisso {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaCompromisso:checked~#modalEmblemaCompromisso .molduraModal {
-    top: 0;
+#controlmodalEmblemaCompromisso:checked
+  ~ #modalEmblemaCompromisso
+  .molduraModal {
+  top: 0;
 }
 
 #modalEmblemaCompromisso .topoModal {
-    height: 25rem;
-    background-image: url(../img/vidaEmFamilia.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/vidaEmFamilia.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalEmblemaCompromisso */
 /* I - modalEmblemaDom */
 
 #modalEmblemaDom {
-    display: flex;
-    opacity: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  display: flex;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaDom:checked~#modalEmblemaDom {
-    opacity: 1;
-    z-index: 300;
-    transition: all .5s ease;
+#controlmodalEmblemaDom:checked ~ #modalEmblemaDom {
+  opacity: 1;
+  z-index: 300;
+  transition: all 0.5s ease;
 }
 
-#controlmodalEmblemaDom:checked~#modalEmblemaDom .molduraModal {
-    top: 0;
+#controlmodalEmblemaDom:checked ~ #modalEmblemaDom .molduraModal {
+  top: 0;
 }
 
 #modalEmblemaDom .topoModal {
-    height: 25rem;
-    background-image: url(../img/vidaEmFamilia.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-position: center;
+  height: 25rem;
+  background-image: url(../img/vidaEmFamilia.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center;
 }
 
 /* F - modalEmblemaDom */
