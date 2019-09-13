@@ -392,7 +392,6 @@
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
   background: #f9f9f9;
   top: -100%;
-  position: relative;
   height: 80vmin;
   overflow-y: scroll;
   max-height: 620px;
