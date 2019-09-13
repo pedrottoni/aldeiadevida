@@ -475,8 +475,6 @@ main {
     -moz-perspective: 1000px;
     -ms-perspective: 1000px;
     perspective: 1000px;
-    -ms-transform: perspective(1000px);
-    -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transition: all .5s;
