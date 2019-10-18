@@ -315,6 +315,7 @@ nav .links {
   height: 1.5rem;
   display: flex;
   place-items: center;
+  cursor: default;
 }
 
 #nucleos p span {
