@@ -96,6 +96,7 @@ dialog {
     transform: translateY(0) scale(1);
   }
 }
+
 label {
   cursor: pointer;
 }
@@ -195,8 +196,7 @@ nav .links {
   font-weight: 500;
 }
 
-#menuPrincipal nav .links ul li a:hover,
-#menuPrincipal nav .links ul li a.active {
+#menuPrincipal nav .links ul li a:hover {
   background: hsla(0, 100%, 70%, 1);
   text-decoration: none;
   transition: all 0.2s;
@@ -213,10 +213,11 @@ nav .links {
   position: fixed;
   transition: all 0.1s;
   left: 0;
-  background: radial-gradient(circle, #f9f9f9 70%, transparent 400%);
+  background: radial-gradient(circle, #f9f9f9 70%, transparent 300%);
   display: flex;
   flex-direction: column;
   height: 0;
+  width: 100vw;
   color: #ffffff;
   overflow: hidden;
 }
@@ -233,7 +234,7 @@ nav .links {
 
 #menuPrincipal nav .links ul li ul li {
   display: block;
-  width: 200px;
+  width: 100%;
 }
 
 #menuPrincipal nav .menu-toggle {
@@ -251,23 +252,25 @@ nav .links {
   width: 100%;
   color: hsla(230, 10%, 40%, 1);
   overflow: hidden;
-  height: 2.5rem;
-  line-height: 3;
+  height: 1.5rem;
+  padding: 0;
+  font-size: 1rem;
 }
 
 #nucleos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-auto-rows: auto;
-  grid-gap: 1rem;
-  max-width: 1040px;
-  width: 100vw;
+  grid-gap: 3rem;
+  max-width: 45rem;
   align-self: center;
   justify-items: center;
+  width: 100vw;
+  text-align: left !important;
 }
 
 #nucleos div {
-  width: 15rem;
+  width: 20rem;
   justify-items: center;
   align-items: center;
   align-content: center;
@@ -283,16 +286,46 @@ nav .links {
 
 #nucleos h2 {
   font-family: overlock;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 0.4rem;
   background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(0, 100%, 70%, 1) 60%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 0.1rem solid hsla(230, 10%, 40%, 0.36);
-  margin-left: 20px;
-  margin-bottom: 0.6rem;
-  width: 76%;
+  width: 100%;
+}
+
+#nucleos h3 {
+  font-family: overlock;
+  background: linear-gradient(22deg, hsla(40, 100%, 70%, 1), hsla(0, 100%, 70%, 1) 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 2rem;
+  padding-top: .5rem;
+  display: flex;
+  place-items: center;
+  font-size: 1.2rem;
+}
+
+#nucleos p {
+  color: #aaa;
+  font-size: 1rem;
+  height: 1.5rem;
+  display: flex;
+  place-items: center;
+}
+
+#nucleos p span {
+  color: transparent;
+  visibility: hidden;
+  transition: .5s;
+}
+
+#nucleos p:hover span:nth-child(1) {
+  color: hsla(200, 100%, 40%, .5);
+  visibility: visible;
 }
 
 #nucleos a:hover {
