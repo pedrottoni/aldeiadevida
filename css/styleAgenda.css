@@ -1,6 +1,6 @@
 /* I - Modal1 */
-.modal input:nth-child(1):checked ~ section:nth-child(2),
-.modal input:nth-child(1):checked ~ section div:first-child {
+.modal input:nth-child(1):checked~section:nth-child(2),
+.modal input:nth-child(1):checked~section div:first-child {
   top: 0;
   opacity: 1 !important;
   z-index: 300 !important;
@@ -53,11 +53,9 @@
 
 .corpoModal .eventoNome {
   font-family: overlock;
-  background: linear-gradient(
-    to right,
-    hsla(0, 100%, 70%, 1),
-    hsla(230, 10%, 40%, 1) 60%
-  );
+  background: linear-gradient(to right,
+      hsla(0, 100%, 70%, 1),
+      hsla(230, 10%, 40%, 1) 60%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -152,67 +150,20 @@
 }
 
 /* F - Modal1 */
+
+#sec1 .contSec1 {
+  padding-top: 10rem;
+}
+
 #sec1 p {
   width: 100%;
 }
 
-#sec1 .contSec1 h6 {
-  width: calc(100vw - 5rem);
-  max-width: 1060px;
-  border-bottom: 1px solid hsla(200, 100%, 40%, 0.3);
-  font-size: 2.5rem;
-  font-family: oswald;
-  margin-top: 4rem;
-  padding: 0.5rem 0;
-  background: linear-gradient(
-    22deg,
-    hsla(200, 100%, 40%, 1),
-    hsla(145, 50%, 60%, 1) 35%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#sec1 .contSec1 h6 i {
-  -webkit-background-clip: none;
-  background-clip: none;
-  -webkit-text-fill-color: hsl(186, 61%, 44%);
-}
-
-#sec1 .contSec1 {
-  padding-top: 8rem;
-  padding-bottom: 5rem;
-  margin-bottom: 0.2rem;
-}
-
-@media (max-width: 425px) {
-  #sec1 .sectionTitleText {
-    font-size: 1.2rem;
-  }
-
-  #sec1 .contSec1 h6 {
-    width: calc(100vw - 2rem);
-  }
-}
-
-@media (max-width: 766px) {
-  #sec1 .capa::after {
-    top: -3rem;
-    margin-bottom: -3rem;
-  }
-
-  #sec1 .sectionTitleText {
-    top: -1rem;
-  }
-}
-
 #sec1 .cards {
-  margin-top: 2rem;
   z-index: 0;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 240px));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
   width: calc(100vw - 5rem);
   place-items: center;
   place-content: center;
@@ -227,20 +178,29 @@
 }
 
 #sec1 .cards h1 {
-  width: 100%;
-  border: none;
-  font-family: Oswald;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  z-index: 4;
+  font-family: overlock;
   font-weight: bold;
   text-align: center;
-  color: #000;
+  align-self: center;
+  padding-top: 1rem;
+  letter-spacing: -0.03rem;
+  background: linear-gradient(22deg, hsla(200, 100%, 40%, 1), hsla(170, 100%, 70%, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#sec1 .cards h2 {
-  font-family: Oswald;
-  font-weight: bold;
-  padding-top: 0.5rem;
-  color: #000;
+#sec1 .cards h1 span {
+  font-weight: normal;
+  background: hsla(230, 10%, 40%, 1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4rem;
+  top: 0.4rem;
+  position: relative;
 }
 
 #sec1 .cards hr {
@@ -252,224 +212,61 @@
   border: 0.03rem solid;
 }
 
-#sec1 .cards p {
-  font-weight: 400;
-  font-size: 1rem;
-}
-
 #sec1 .cards a {
   text-decoration: none;
   color: unset;
 }
 
 #sec1 .card {
-  width: 12rem;
-  background: hsl(0, 0%, 98%);
-  border-radius: 0 0 0.4rem 0.4rem;
-  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-    0 1px 3px 1px rgba(60, 64, 67, 0.16);
+  width: 11rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  transition: all 0.5s;
   cursor: pointer;
+  padding-bottom: 2rem;
+}
+
+#sec1 .card img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  object-fit: cover;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.16), 0 1px 3px 1px rgba(60, 64, 67, 0.24);
+  transition: all 0.5s;
 }
 
 #sec1 .card p {
   margin-top: 1.5rem;
 }
 
-#sec1 .card:hover {
-  transform: translateZ(0.1rem);
-  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-    0 1px 20px 1px rgba(60, 64, 67, 0.16);
-  background: #fff;
-}
-
-#sec1 .cardAdolescentes {
-  border-top: 0.6rem solid hsla(0, 100%, 70%, 1);
-}
-
-#sec1 .cardAdolescentes:before {
-  width: 0.6rem;
-  height: 0.6rem;
+#sec1 .card::after {
   content: "";
-  transform: rotate(45deg);
+  height: 42px;
+  background: transparent;
   position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(0, 100%, 70%, 1);
-  background: hsla(0, 100%, 70%, 1);
+  border-radius: 52rem 50rem 11rem 11rem / 2rem 1rem 12rem 12rem;
+  width: 90vw;
+  border-top: 3px solid hsla(40, 100%, 70%, 1);
+  transform: rotate(1deg) translateY(-4.5rem) scaleX(0);
+  top: 5rem;
+  max-width: 10rem;
+  transition: 0.4s 0.1s;
+  opacity: 0;
+}
+
+#sec1 .card:hover img {
+  transform: translateZ(0.05rem);
+}
+
+#sec1 .card:hover::after {
+  opacity: 1;
+  transform: rotate(1deg) translateY(-4.5rem) scaleX(1);
 }
 
 .modalAdolecentes .topoModal {
   background: hsla(0, 100%, 70%, 1);
   height: 15rem;
   background-image: url(../img/aldeia-de-adolescentes.jpg);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cardADV {
-  border-top: 0.6rem solid hsla(40, 100%, 70%, 1);
-}
-
-#sec1 .cardADV:before {
-  width: 0.6rem;
-  height: 0.6rem;
-  content: "";
-  transform: rotate(45deg);
-  position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(40, 100%, 70%, 1);
-  background: hsla(40, 100%, 70%, 1);
-}
-
-.modalADV .topoModal {
-  background: hsla(40, 100%, 70%, 1);
-  height: 15rem;
-  background-image: url(../img/aldeia-aliancas-de-vida.jpg);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cardVEF {
-  border-top: 0.6rem solid hsla(145, 50%, 60%, 1);
-}
-
-#sec1 .cardVEF:before {
-  width: 0.6rem;
-  height: 0.6rem;
-  content: "";
-  transform: rotate(45deg);
-  position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(145, 50%, 60%, 1);
-  background: hsla(145, 50%, 60%, 1);
-}
-
-.modalVEF .topoModal {
-  background: hsla(145, 50%, 60%, 1);
-  height: 15rem;
-  background-image: url(../img/aldeia-vida-em-familia.jpg);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cardAprofundamento {
-  border-top: 0.6rem solid hsla(200, 100%, 40%, 1);
-}
-
-#sec1 .cardAprofundamento:before {
-  width: 0.6rem;
-  height: 0.6rem;
-  content: "";
-  transform: rotate(45deg);
-  position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(200, 100%, 40%, 1);
-  background: hsla(200, 100%, 40%, 1);
-}
-
-.modalAprofundamento .topoModal {
-  background: hsla(200, 100%, 40%, 1);
-  height: 15rem;
-  background-image: url(../img/aldeia-de-aprofundamento.jpg);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cardJovens {
-  border-top: 0.6rem solid hsla(200, 100%, 25%, 1);
-}
-
-#sec1 .cardJovens:before {
-  width: 0.6rem;
-  height: 0.6rem;
-  content: "";
-  transform: rotate(45deg);
-  position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(200, 100%, 25%, 1);
-  background: hsla(200, 100%, 25%, 1);
-}
-
-.modalJovens .topoModal {
-  background: hsla(200, 100%, 25%, 1);
-  height: 15rem;
-  background-image: url(../img/aldeia-de-jovens.jpg);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cardRecomeço {
-  border-top: 0.6rem solid hsla(145, 50%, 30%, 1);
-}
-
-#sec1 .cardRecomeço:before {
-  width: 0.6rem;
-  height: 0.6rem;
-  content: "";
-  transform: rotate(45deg);
-  position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(145, 50%, 30%, 1);
-  background: hsla(145, 50%, 30%, 1);
-}
-
-.modalRecomeço .topoModal {
-  background: hsla(145, 50%, 30%, 1);
-  height: 15rem;
-  background-image: url(../img/aldeia-recomeco-de-vida.jpg);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cardMDV {
-  border-top: 0.6rem solid hsla(0, 100%, 35%, 1);
-}
-
-#sec1 .cardMDV:before {
-  width: 0.6rem;
-  height: 0.6rem;
-  content: "";
-  transform: rotate(45deg);
-  position: relative;
-  bottom: 2.4rem;
-  border-bottom: 0.2rem solid;
-  border-right: 0.2rem solid;
-  border-color: hsla(0, 100%, 35%, 1);
-  background: hsla(0, 100%, 35%, 1);
-}
-
-.modalMDV .topoModal {
-  background: hsla(0, 100%, 35%, 1);
-  height: 15rem;
-  background-image: url(../img/aldeia-o-melhor-da-vida.jpg);
   background-blend-mode: soft-light;
   background-size: cover;
   display: flex;
