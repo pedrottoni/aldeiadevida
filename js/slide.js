@@ -4,7 +4,7 @@ var slide = document.getElementsByName("menu");
 var cor = document.getElementsByName("menu1");
 
 function tempo() {
-    setTimeout(start, 8000);
+    setTimeout(start, 10000);
 }
 
 function core() {
