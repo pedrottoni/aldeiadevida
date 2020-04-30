@@ -13,7 +13,6 @@
 }
 
 .aviso-moldura {
-  background: url(/img/cuidar-fundo.jpg);
   background-size: cover;
   position: fixed;
   display: flex;
@@ -33,7 +32,7 @@
   padding: 2rem;
   filter: none !important;
   backdrop-filter: blur(4px) hue-rotate(190deg);
-  background: hsla(0, 0%, 100%, 0.82);
+  background: hsla(0, 0%, 100%, 0.75);
   text-align: center;
   border-radius: 0.5rem;
 }
